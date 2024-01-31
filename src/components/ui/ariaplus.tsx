@@ -45,7 +45,7 @@ export function ArplImage({
             ? blurClassName ??
                 'animate-pulse bg-light-secondary dark:bg-dark-secondary'
             : previewCount === 1
-            ? '!h-24 !w-24 rounded-lg object-contain absolute inset-0'
+            ? '!h-24 !w-24 rounded-lg object-contain relative inset-0'
             : 'object-cover w-full h-full relative',
               'transition-opacity duration-300'
         )}
