@@ -238,7 +238,7 @@ export function TweetActions({
                         </>
                       ) : (
                         <>
-                          <CustomIcon iconName='PinIcon' />
+                          <CustomIcon iconName='' />
                           Pin to your profile
                         </>
                       )}
