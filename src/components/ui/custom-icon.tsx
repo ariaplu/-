@@ -32,12 +32,7 @@ export function CustomIcon({
 
 function AriaPlusIcon({ className }: IconProps): JSX.Element {
   return (
-     <Image
-      src="./assets/ariaplus.svg"
-      alt="ARPL"
-      width={24}
-      height={24}
-    />
+   <img class="homeicon" viewBox="0 0 24 24" src="./images/ariaplus.svg" alt="Aria+" />
   );
 }
 
