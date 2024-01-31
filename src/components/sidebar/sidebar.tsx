@@ -94,7 +94,7 @@ export function Sidebar(): JSX.Element {
                            focus-visible:bg-accent-blue/10 focus-visible:!ring-accent-blue/80
                            dark:text-twitter-icon dark:hover:bg-dark-primary/10'
               >
-               <CustomIcon className='h-7 w-7' src='./assets/ariaplus.svg'/>
+                <CustomIcon className='h-7 w-7' iconName='AriaPlusIcon' />
               </a>
             </Link>
           </h1>
