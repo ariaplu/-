@@ -19,7 +19,16 @@ export function LoginMain(): JSX.Element {
           useSkeleton
         />
         <i className='absolute'>
-          <CustomIcon className='h-96 w-96 text-white' iconName='AriaPlusIcon' />
+        <ArplImage
+          imgClassName='arplicon'
+          blurClassName='none'
+          src='/assets/ariaplus.svg'
+          alt='Twitter banner'
+          layout='fill'
+          width='60px'
+          height='60px'
+          useSkeleton
+       />
         </i>
       </div>
       <div className='flex flex-col items-center justify-between gap-6 p-8 lg:items-start lg:justify-center'>
