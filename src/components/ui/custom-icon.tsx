@@ -16,7 +16,7 @@ const Icons = {
   AppleIcon,
   PinOffIcon,
   GoogleIcon,
-  TwitterIcon,
+  AriaPlusIcon,
   FeatherIcon,
   SpinnerIcon,
   TriangleIcon
