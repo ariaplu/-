@@ -238,7 +238,7 @@ export function TweetActions({
                         </>
                       ) : (
                         <>
-                          <CustomIcon iconName='' />
+                          <CustomIcon iconName='AriaPlusIcon' />
                           Pin to your profile
                         </>
                       )}
