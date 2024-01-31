@@ -23,9 +23,8 @@ export function LoginMain(): JSX.Element {
         </i>
       </div>
       <div className='flex flex-col items-center justify-between gap-6 p-8 lg:items-start lg:justify-center'>
-        <i className=' self-center lg:mb-10 lg:self-auto'>
+        <i className=' self-center'>
         <ArplImage
-          className='arpli'
           imgClassName='arplicon'
           blurClassName='none'
           src='/assets/ariaplus.svg'
