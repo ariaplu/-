@@ -1,5 +1,4 @@
 import cn from 'clsx';
-import AriaPlusIcon from '../assets/ariaplus.svg'; // Import the image
 
 type IconName = keyof typeof Icons;
 
