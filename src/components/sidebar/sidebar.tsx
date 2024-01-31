@@ -10,6 +10,7 @@ import { SidebarLink } from './sidebar-link';
 import { MoreSettings } from './more-settings';
 import { SidebarProfile } from './sidebar-profile';
 import type { IconName } from '@components/ui/hero-icon';
+import { ArplImage } from '@components/ui/ariaplus';
 
 export type NavLink = {
   href: string;
@@ -94,7 +95,16 @@ export function Sidebar(): JSX.Element {
                            focus-visible:bg-accent-blue/10 focus-visible:!ring-accent-blue/80
                            dark:text-twitter-icon dark:hover:bg-dark-primary/10'
               >
-                <CustomIcon className='h-7 w-7' iconName='AriaPlusIcon' />
+        <ArplImage
+          imgClassName='arplicon'
+          blurClassName='none'
+          src='/assets/ariaplus.svg'
+          alt='Twitter banner'
+          layout='fill'
+          width='60px'
+          height='60px'
+          useSkeleton
+       />
               </a>
             </Link>
           </h1>
