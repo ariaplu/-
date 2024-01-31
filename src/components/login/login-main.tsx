@@ -24,9 +24,9 @@ export function LoginMain(): JSX.Element {
       </div>
       <div className='flex flex-col items-center justify-between gap-6 p-8 lg:items-start lg:justify-center'>
         <i className='mb-0 self-center lg:mb-10 lg:self-auto'>
-     <ArplImage
-          imgClassName='object-cover'
-          blurClassName='bg-accent-blue'
+        <ArplImage
+          imgClassName='flex flex-col items-center justify-between gap-6 p-8 lg:items-start lg:justify-center'
+          blurClassName='none'
           src='/assets/ariaplus.svg'
           alt='Twitter banner'
           layout='fill'
