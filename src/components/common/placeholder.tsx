@@ -1,4 +1,4 @@
-import { CustomIcon } from '@components/ui/custom-icon';
+import { ArplImage } from '@components/ui/ariaplus';
 import { SEO } from './seo';
 
 export function Placeholder(): JSX.Element {
@@ -10,10 +10,16 @@ export function Placeholder(): JSX.Element {
         image='/home.png'
       />
       <i>
-        <CustomIcon
-          className='h-20 w-20 text-[#1DA1F2]'
-          iconName='AriaPlusIcon'
-        />
+        <ArplImage
+          imgClassName='arplicon'
+          blurClassName='none'
+          src='/assets/ariaplus.svg'
+          alt='Twitter banner'
+          layout='fill'
+          width='60px'
+          height='60px'
+          useSkeleton
+       />
       </i>
     </main>
   );
