@@ -11,7 +11,7 @@ type CustomIconProps = IconProps & {
 };
 
 const Icons = {
-  Icon.AppleIcon
+  AppleIcon
   PinOffIcon,
   GoogleIcon,
   AriaPlusIcon,
