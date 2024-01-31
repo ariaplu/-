@@ -35,7 +35,7 @@ function AriaPlusIcon({ className }: IconProps): JSX.Element {
   return (
     <img
 
-      className={cn('fill-current', className)} viewBox='0 0 24 24'
+      className={cn('fill-current', className)}
 
       src={ariaPlus} // Use the imported image as the source
 
