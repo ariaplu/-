@@ -23,7 +23,7 @@ export function LoginMain(): JSX.Element {
         </i>
       </div>
       <div className='flex flex-col items-center justify-between gap-6 p-8 lg:items-start lg:justify-center'>
-        <i className=' self-center'>
+        <i className=' self-center lg:mb-10 lg:self-auto'>
         <ArplImage
           imgClassName='arplicon'
           blurClassName='none'
