@@ -24,16 +24,7 @@ const navLinks: Readonly<NavLink[]> = [
   {
     href: '/home',
     linkName: 'Home',
-          <ArplImage
-          imgClassName='arplicon'
-          blurClassName='none'
-          src='/assets/ariaplus.svg'
-          alt='Twitter banner'
-          layout='fill'
-          width='60px'
-          height='60px'
-          useSkeleton
-       />
+    iconName: 'HomeIcon'
   },
   {
     href: '/explore',
