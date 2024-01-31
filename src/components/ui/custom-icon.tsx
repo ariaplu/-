@@ -33,14 +33,11 @@ export function CustomIcon({
 
 function AriaPlusIcon({ className }: IconProps): JSX.Element {
   return (
-    <img
-
-      className={cn('fill-current', className)}
-
-      src={ariaPlus} // Use the imported image as the source
-
-      alt="AriaPlusIcon"
-
+     <Image
+      src="./assets/ariaplus.svg"
+      alt="ARPL"
+      width={24}
+      height={24}
     />
   );
 }
