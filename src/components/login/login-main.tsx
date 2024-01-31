@@ -10,14 +10,6 @@ export function LoginMain(): JSX.Element {
   return (
     <main className='grid lg:grid-cols-[1fr,45vw]'>
       <div className='relative hidden items-center justify-center  lg:flex'>
-        <ArplImage
-          imgClassName='object-cover'
-          blurClassName='bg-accent-blue'
-          src='/assets/twitter-banner.png'
-          alt='Twitter banner'
-          layout='fill'
-          useSkeleton
-        />
         <i className='absolute'>
         <ArplImage
           imgClassName='arplicon'
