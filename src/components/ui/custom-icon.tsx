@@ -1,6 +1,6 @@
 import cn from 'clsx';
 import Image from "next/image";
-import AriaPlusIcon from "./assets/ariaplus.svg";
+import PlusIcon from "./assets/ariaplus.svg";
 
 type IconName = keyof typeof Icons;
 
@@ -34,7 +34,7 @@ export function CustomIcon({
 
 function AriaPlusIcon({ className }: IconProps): JSX.Element {
   return (
-   <Image src={AriaPlusIcon} width="24" height="24" />
+   <Image src={PlusIcon} width="24" height="24" />
   );
 }
 
