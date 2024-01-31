@@ -17,7 +17,7 @@ const Icons = {
   AriaPlusIcon,
   FeatherIcon,
   SpinnerIcon,
-  TriangleIcon
+  TriangleIcon,
 };
 
 export function CustomIcon({
