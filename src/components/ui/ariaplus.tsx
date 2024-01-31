@@ -55,7 +55,6 @@ export function ArplImage({
         alt={alt}
         onLoadingComplete={handleLoad}
         layout='responsive'
-        {...rest}
       />
       {children}
     </figure>
