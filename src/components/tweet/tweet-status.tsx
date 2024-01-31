@@ -19,7 +19,7 @@ export function TweetStatus({ type, children }: TweetStatusProps): JSX.Element {
         {type === 'pin' ? (
           <CustomIcon
             className='h-5 w-5 -rotate-45 fill-light-secondary dark:fill-dark-secondary'
-            iconName='PinIcon'
+            iconName='AriaPlusIcon'
           />
         ) : (
           <HeroIcon className='h-5 w-5' iconName='ArrowPathRoundedSquareIcon' />
