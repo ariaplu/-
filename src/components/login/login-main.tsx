@@ -30,7 +30,7 @@ export function LoginMain(): JSX.Element {
           blurClassName='none'
           src='/assets/ariaplus.svg'
           alt='Twitter banner'
-          layout='fill'
+          layout='inherit'
           width='24px'
           height='24px'
           useSkeleton
