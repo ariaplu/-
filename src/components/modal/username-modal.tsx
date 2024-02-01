@@ -2,6 +2,8 @@ import { Dialog } from '@headlessui/react';
 import { CustomIcon } from '@components/ui/custom-icon';
 import { Button } from '@components/ui/button';
 import type { ReactNode, FormEvent } from 'react';
+import { ArplImage } from '@components/ui/ariaplus';
+
 
 type UsernameModalProps = {
   loading: boolean;
@@ -44,7 +46,16 @@ export function UsernameModal({
       <div className='flex flex-col gap-6'>
         <div className='flex flex-col gap-4'>
           <i className='mx-auto'>
-            <CustomIcon className='h-10 w-10' iconName='AriaPlusIcon' />
+      <ArplImage
+          imgClassName='arplicon'
+          blurClassName='none'
+          src='/assets/ariaplus.svg'
+          alt='Twitter banner'
+          layout='fill'
+          width='40px'
+          height='40px'
+          useSkeleton
+       />
           </i>
           <div className='flex flex-col gap-2'>
             <Dialog.Title className='text-2xl font-bold xs:text-3xl sm:text-4xl'>
