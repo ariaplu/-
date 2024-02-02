@@ -3,8 +3,9 @@ import Link from 'next/link';
 import cn from 'clsx';
 import { preventBubbling } from '@lib/utils';
 import { HeroIcon } from '@components/ui/hero-icon';
-import type { NavLink } from './sidebar';
 import { CustomIcon } from '@components/ui/custom-icon';
+import type { NavLink } from './sidebar';
+
 
 type SidebarLinkProps = NavLink & {
   username?: string;
