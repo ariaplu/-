@@ -14,6 +14,7 @@ import { ActionModal } from './action-modal';
 import { DisplayModal } from './display-modal';
 import type { NavLink } from '@components/sidebar/sidebar';
 import type { User } from '@lib/types/user';
+import { ArplImage } from '@components/ui/ariaplus';
 
 export type MobileNavLink = Omit<NavLink, 'canBeHidden'>;
 
@@ -118,9 +119,9 @@ export function MobileSidebarModal({
         closeModal={logOutCloseModal}
       >
         <ActionModal
-          useIcon
+          ArplImage
           focusOnMainBtn
-          title='Log out of Twitter?'
+          title='Log out of Aria+?'
           description='You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.'
           mainBtnLabel='Log out'
           action={signOut}
