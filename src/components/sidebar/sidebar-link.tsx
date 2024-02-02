@@ -42,7 +42,7 @@ export function SidebarLink({
             isActive && 'font-bold'
           )}
         >
-        <CustomIcon iconName='GoogleIcon' /> 
+        <CustomIcon  /> 
           <p className='hidden xl:block'>{linkName}</p>
         </div>
       </a>
