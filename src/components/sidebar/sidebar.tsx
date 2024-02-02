@@ -24,7 +24,7 @@ const navLinks: Readonly<NavLink[]> = [
   {
     href: '/home',
     linkName: 'Home',
-    iconName: 'HomeIcon',
+    iconName: 'HomeIcon'
   },
   {
     href: '/explore',
