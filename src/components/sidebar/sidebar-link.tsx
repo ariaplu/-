@@ -45,7 +45,7 @@ export function SidebarLink({
         <ArplImage
           imgClassName='arplicon'
           blurClassName='none'
-          src={src}
+          src={string}
           alt='SidebarIcon'
           layout='fill'
           width='25px'
