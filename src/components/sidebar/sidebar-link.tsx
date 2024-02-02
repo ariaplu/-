@@ -8,7 +8,6 @@ import { CustomIcon } from '@components/ui/custom-icon';
 
 type SidebarLinkProps = NavLink & {
   username?: string;
-  src?: string;
 };
 
 export function SidebarLink({
@@ -16,7 +15,6 @@ export function SidebarLink({
   username,
   iconName,
   linkName,
-  src,
   disabled,
   canBeHidden
 }: SidebarLinkProps): JSX.Element {
