@@ -8,6 +8,7 @@ import { ArplImage } from '@components/ui/ariaplus';
 
 type SidebarLinkProps = NavLink & {
   username?: string;
+  src?: string;
 };
 
 export function SidebarLink({
