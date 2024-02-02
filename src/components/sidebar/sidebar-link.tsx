@@ -15,6 +15,7 @@ export function SidebarLink({
   username,
   iconName,
   linkName,
+  src,
   disabled,
   canBeHidden
 }: SidebarLinkProps): JSX.Element {
