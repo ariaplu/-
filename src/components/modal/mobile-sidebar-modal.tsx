@@ -119,6 +119,7 @@ export function MobileSidebarModal({
         closeModal={logOutCloseModal}
       >
         <ActionModal
+          useIcon
           focusOnMainBtn
           title='Log out of Aria+?'
           description='You can always log back in at any time. If you just want to switch accounts, you can do that by adding an existing account.'
