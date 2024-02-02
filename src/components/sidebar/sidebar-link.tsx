@@ -4,6 +4,7 @@ import cn from 'clsx';
 import { preventBubbling } from '@lib/utils';
 import { HeroIcon } from '@components/ui/hero-icon';
 import type { NavLink } from './sidebar';
+import { ArplImage } from '@components/ui/ariaplus';
 
 type SidebarLinkProps = NavLink & {
   username?: string;
@@ -39,16 +40,16 @@ export function SidebarLink({
             isActive && 'font-bold'
           )}
         >
-          <HeroIcon
-            className={cn(
-              'h-7 w-7',
-              isActive &&
-                ['Explore', 'Lists'].includes(linkName) &&
-                'stroke-white'
-            )}
-            iconName={iconName}
-            solid={isActive}
-          />
+        <ArplImage
+          imgClassName='arplicon'
+          blurClassName='none'
+          src='/assets/ariaplus.svg'
+          alt='Twitter banner'
+          layout='fill'
+          width='40px'
+          height='40px'
+          useSkeleton
+       />
           <p className='hidden xl:block'>{linkName}</p>
         </div>
       </a>
