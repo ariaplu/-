@@ -3,6 +3,8 @@ import cn from 'clsx';
 import { Dialog } from '@headlessui/react';
 import { Button } from '@components/ui/button';
 import { CustomIcon } from '@components/ui/custom-icon';
+import { ArplImage } from '@components/ui/ariaplus';
+
 
 type ActionModalProps = {
   title: string;
@@ -43,10 +45,16 @@ export function ActionModal({
       <div className='flex flex-col gap-4'>
         {useIcon && (
           <i className='mx-auto'>
-            <CustomIcon
-              className='h-10 w-10 text-accent-blue dark:text-twitter-icon'
-              iconName='AriaPlusIcon'
-            />
+         <ArplImage
+          imgClassName='arplicon'
+          blurClassName='none'
+          src='/assets/ariaplus.svg'
+          alt='Twitter banner'
+          layout='fill'
+          width='40px'
+          height='40px'
+          useSkeleton
+       />
           </i>
         )}
         <div className='flex flex-col gap-2'>
