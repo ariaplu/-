@@ -24,7 +24,7 @@ export function SidebarLink({
     <Link href={href}>
       <a
         className={cn(
-          'group py-1 outline-none',
+          'group outline-none',
           canBeHidden ? 'hidden xs:flex' : 'flex',
           disabled && 'cursor-not-allowed'
         )}
