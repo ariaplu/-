@@ -35,7 +35,7 @@ export function MoreSettings(): JSX.Element {
       <Menu className='relative' as='div'>
         {({ open }): JSX.Element => (
           <>
-            <Menu.Button className='group relative flex w-full py-1 outline-none'>
+            <Menu.Button className='group relative flex w-full outline-none'>
               <div
                 className={cn(
                   `custom-button flex gap-4 text-xl transition group-hover:bg-light-primary/10 group-focus-visible:ring-2
