@@ -4,7 +4,7 @@ import cn from 'clsx';
 import { preventBubbling } from '@lib/utils';
 import { HeroIcon } from '@components/ui/hero-icon';
 import type { NavLink } from './sidebar';
-import { ArplImage } from '@components/ui/ariaplus';
+import { CustomIcon } from '@components/ui/custom-icon';
 
 type SidebarLinkProps = NavLink & {
   username?: string;
@@ -42,16 +42,7 @@ export function SidebarLink({
             isActive && 'font-bold'
           )}
         >
-        <ArplImage
-          imgClassName='arplicon'
-          blurClassName='none'
-          src={string}
-          alt='SidebarIcon'
-          layout='fill'
-          width='25px'
-          height='25px'
-          useSkeleton
-       />
+        <CustomIcon iconName='GoogleIcon' /> 
           <p className='hidden xl:block'>{linkName}</p>
         </div>
       </a>
