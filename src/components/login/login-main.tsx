@@ -17,8 +17,8 @@ export function LoginMain(): JSX.Element {
           src='/assets/ariaplus.svg'
           alt='Twitter banner'
           layout='fill'
-          width='60px'
-          height='60px'
+          width='full'
+          height='full'
           useSkeleton
        />
         </i>
