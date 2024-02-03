@@ -38,7 +38,7 @@ export function LoginMain(): JSX.Element {
         </i>
         <div className='flex max-w-xs flex-col gap-4 font-twitter-chirp-extended lg:max-w-none'>
           <h1
-            className='text-3xl before:content-["Everything Here"] 
+            className='text-3xl before:content-["Everything_Here"] 
                        lg:text-6xl lg:before:content-["Everything"]'
           />
           <h2 className='hidden text-xl lg:block lg:text-3xl'>
