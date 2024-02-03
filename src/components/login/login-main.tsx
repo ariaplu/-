@@ -14,7 +14,7 @@ export function LoginMain(): JSX.Element {
         <ArplImage
           imgClassName='arplicon'
           blurClassName='none'
-          src='/assets/ariaplus.svg'
+          src='https://images.pexels.com/photos/18099932/pexels-photo-18099932/free-photo-of-woman-in-tied-crop-top-crouching-on-bench.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
           alt='Twitter banner'
           layout='fill'
           width='735px'
