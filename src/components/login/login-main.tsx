@@ -14,7 +14,7 @@ export function LoginMain(): JSX.Element {
         <ArplImage
           imgClassName='arplicon'
           blurClassName='none'
-          src='./assets/cover.jpg'
+          src='/assets/cover.jpg'
           alt='Twitter banner'
           layout='fill'
           width='735px'
