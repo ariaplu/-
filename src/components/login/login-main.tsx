@@ -24,7 +24,7 @@ export function LoginMain(): JSX.Element {
         </i>
       </div>
       <div className='flex flex-col items-center justify-between gap-6 p-8 lg:items-start lg:justify-center'>
-        <i className=' self-center lg:mb-10 lg:self-auto'>
+        <i className=' self-center  lg:self-auto'>
         <ArplImage
           imgClassName='arplicon'
           blurClassName='none'
@@ -36,7 +36,7 @@ export function LoginMain(): JSX.Element {
           useSkeleton
        />
         </i>
-        <div className='flex max-w-xs flex-col gap-4 font-twitter-chirp-extended lg:max-w-none lg:gap-16'>
+        <div className='flex max-w-xs flex-col gap-4 font-twitter-chirp-extended lg:max-w-none >
           <h1
             className='text-3xl before:content-["See_what’s_happening_in_the_world_right_now."] 
                        lg:text-6xl lg:before:content-["Happening_now"]'
