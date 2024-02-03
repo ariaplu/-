@@ -60,7 +60,7 @@ export function LoginMain(): JSX.Element {
                          transition hover:bg-[#e6e6e6] focus-visible:bg-[#e6e6e6] active:bg-[#cccccc] dark:border-0
                          dark:bg-white dark:hover:brightness-90 dark:focus-visible:brightness-90 dark:active:brightness-75'
             >
-              <CustomIcon iconName='AppleIcon' /> Sign up with Apple
+              <CustomIcon iconName='AppleIcon' />
             </Button>
             <div className='grid w-full grid-cols-[1fr,auto,1fr] items-center gap-2'>
               <i className='border-b border-light-border dark:border-dark-border' />
