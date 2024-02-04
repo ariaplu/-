@@ -126,12 +126,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
               <div className='flex justify-between gap-2 text-light-secondary dark:text-dark-secondary'>
                 <div className='flex gap-1 truncate xs:overflow-visible xs:whitespace-normal'>
                   
-                    <UserName
-                      name={name}
-                      username={username}
-                      verified={verified}
-                      className='text-light-primary dark:text-dark-primary'
-                    />
+                    
 
                 </div>
                 <div className='px-4'>
@@ -173,7 +168,10 @@ export function Tweet(tweet: TweetProps): JSX.Element {
                     imagesPreview={images}
                     previewCount={images.length}
                   />
-             
+                )}
+                {!modal && (
+                )}
+              </div>
             </div>
           </div>
         </a>
