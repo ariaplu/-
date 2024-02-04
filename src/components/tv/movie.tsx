@@ -170,6 +170,16 @@ export function Tweet(tweet: TweetProps): JSX.Element {
                   />
                 )}
                 {!modal && (
+                 <TweetStats
+                    reply={reply}
+                    userId={userId}
+                    isOwner={isOwner}
+                    tweetId={tweetId}
+                    userLikes={userLikes}
+                    userReplies={userReplies}
+                    userRetweets={userRetweets}
+                    openModal={!parent ? openModal : undefined}
+                  />
                 )}
               </div>
             </div>
