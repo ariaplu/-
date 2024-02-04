@@ -174,7 +174,6 @@ export function Tweet(tweet: TweetProps): JSX.Element {
                     previewCount={images.length}
                   />
              
-              </div>
             </div>
           </div>
         </a>
