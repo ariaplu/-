@@ -120,61 +120,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
               )}
             </AnimatePresence>
             <div className='flex flex-col items-center gap-2'>
-              <UserTooltip avatar modal={modal} {...tweetUserData}>
-                <UserAvatar src={photoURL} alt={name} username={username} />
-              </UserTooltip>
-              {parentTweet && (
-                <i className='hover-animation h-full w-0.5 bg-light-line-reply dark:bg-dark-line-reply' />
-              )}
-            </div>
-            <div className='flex min-w-0 flex-col'>
-              <div className='flex justify-between gap-2 text-light-secondary dark:text-dark-secondary'>
-                <div className='flex gap-1 truncate xs:overflow-visible xs:whitespace-normal'>
-                  <UserTooltip modal={modal} {...tweetUserData}>
-                    <UserName
-                      name={name}
-                      username={username}
-                      verified={verified}
-                      className='text-light-primary dark:text-dark-primary'
-                    />
-                  </UserTooltip>
-                  <UserTooltip modal={modal} {...tweetUserData}>
-                    <UserUsername username={username} />
-                  </UserTooltip>
-                  <TweetDate tweetLink={tweetLink} createdAt={createdAt} />
-                </div>
-                <div className='px-4'>
-                  {!modal && (
-                    <TweetActions
-                      isOwner={isOwner}
-                      ownerId={ownerId}
-                      tweetId={tweetId}
-                      parentId={parentId}
-                      username={username}
-                      hasImages={!!images}
-                      createdBy={createdBy}
-                    />
-                  )}
-                </div>
-              </div>
-              {(reply || modal) && (
-                <p
-                  className={cn(
-                    'text-light-secondary dark:text-dark-secondary',
-                    modal && 'order-1 my-2'
-                  )}
-                >
-                  Replying to{' '}
-                  <Link href={`/user/${parentUsername}`}>
-                    <a className='custom-underline text-main-accent'>
-                      @{parentUsername}
-                    </a>
-                  </Link>
-                </p>
-              )}
-              {text && (
-                <p className='whitespace-pre-line break-words'>{text}</p>
-              )}
+              
               <div className='mt-1 flex flex-col gap-2'>
                 {images && (
                   <ImagePreview
@@ -182,19 +128,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
                     imagesPreview={images}
                     previewCount={images.length}
                   />
-                )}
-                {!modal && (
-                  <TweetStats
-                    reply={reply}
-                    userId={userId}
-                    isOwner={isOwner}
-                    tweetId={tweetId}
-                    userLikes={userLikes}
-                    userReplies={userReplies}
-                    userRetweets={userRetweets}
-                    openModal={!parent ? openModal : undefined}
-                  />
-                )}
+          
               </div>
             </div>
           </div>
