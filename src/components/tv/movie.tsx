@@ -128,8 +128,6 @@ export function Tweet(tweet: TweetProps): JSX.Element {
                     imagesPreview={images}
                     previewCount={images.length}
                   />
-          
-              </div>
             </div>
           </div>
         </a>
