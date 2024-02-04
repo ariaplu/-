@@ -104,9 +104,7 @@ export default function Bookmarks(): JSX.Element {
           />
         ) : (
           <AnimatePresence mode='popLayout'>
-            {tweetData?.map((tweet) => (
-              <Tweet {...tweet} key={tweet.id} />
-            ))}
+
           </AnimatePresence>
         )}
       </section>
