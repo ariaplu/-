@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "@components/tv/Header";
-import { getSession, useSession } from "next-auth/react";
 import Hero from "@components/tv/Hero";
 import Slider from "@components/tv/Slider";
 import Brands from "@components/tv/Brands";
