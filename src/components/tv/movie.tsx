@@ -129,6 +129,58 @@ export function Tweet(tweet: TweetProps): JSX.Element {
                     
 
                 </div>
+                <div className='px-4'>
+                  {!modal && (
+                    <TweetActions
+                      isOwner={isOwner}
+                      ownerId={ownerId}
+                      tweetId={tweetId}
+                      parentId={parentId}
+                      username={username}
+                      hasImages={!!images}
+                      createdBy={createdBy}
+                    />
+                  )}
+                </div>
+              </div>
+              {(reply || modal) && (
+                <p
+                  className={cn(
+                    'text-light-secondary dark:text-dark-secondary',
+                    modal && 'order-1 my-2'
+                  )}
+                >
+                  Replying to{' '}
+                  <Link href={`/user/${parentUsername}`}>
+                    <a className='custom-underline text-main-accent'>
+                      @{parentUsername}
+                    </a>
+                  </Link>
+                </p>
+              )}
+              {text && (
+                <p className='whitespace-pre-line break-words'>{text}</p>
+              )}
+              <div className='mt-1 flex flex-col gap-2'>
+                {images && (
+                  <ImagePreview
+                    tweet
+                    imagesPreview={images}
+                    previewCount={images.length}
+                  />
+                )}
+                {!modal && (
+                 <TweetStats
+                    reply={reply}
+                    userId={userId}
+                    isOwner={isOwner}
+                    tweetId={tweetId}
+                    userLikes={userLikes}
+                    userReplies={userReplies}
+                    userRetweets={userRetweets}
+                    openModal={!parent ? openModal : undefined}
+                  />
+                )}
               </div>
             </div>
           </div>
