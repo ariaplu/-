@@ -1,13 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Header from "../components/Header";
+import Header from "@components/tv/Header";
 import { getSession, useSession } from "next-auth/react";
-import Hero from "../components/Hero";
-import Slider from "../components/Slider";
-import Brands from "../components/Brands";
-import MoviesCollection from "../components/MoviesCollection";
-import SeriesCollection from "../components/SeriesCollection";
+import Hero from "@components/tv/Hero";
+import Slider from "@components/tv/Slider";
+import Brands from "@components/tv/Brands";
+import MoviesCollection from "@components/tv/MoviesCollection";
+import SeriesCollection from "@components/tv/SeriesCollection";
 
 export default function Home({
   popularMovies,
