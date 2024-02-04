@@ -3,7 +3,7 @@ import { doc } from 'firebase/firestore';
 import { useDocument } from '@lib/hooks/useDocument';
 import { tweetsCollection } from '@lib/firebase/collections';
 import { getRandomId } from '@lib/random';
-import { Tweet } from './tweet';
+import { Tweet } from './movie';
 import type { LoadedParents } from './tweet-with-parent';
 
 type TweetParentProps = {
