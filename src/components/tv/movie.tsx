@@ -49,7 +49,7 @@ export function Movie(movies: MovieProps): JSX.Element {
     userReplies,
     userRetweets,
     user: tweetUserData
-  } = tweet;
+  } = movies;
 
   const { id: ownerId, name, username, verified, photoURL } = tweetUserData;
 
