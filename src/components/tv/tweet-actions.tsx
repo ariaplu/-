@@ -106,7 +106,7 @@ export function TweetActions({
       } else await push('/home');
 
     await Promise.all([
-      removeTweet(tweetId),
+      removeTweet(moviesId),
       manageTotalTweets('decrement', ownerId),
       hasImages && manageTotalPhotos('decrement', createdBy),
       parentId && manageReply('decrement', parentId)
