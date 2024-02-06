@@ -34,7 +34,7 @@ export function TweetWithParent({ data }: TweetWithParentProps): JSX.Element {
               addParentId={addParentId}
             />
           )}
-          <Movies {...movies} />
+          <Movie {...movies} />
         </div>
       ))}
     </>
