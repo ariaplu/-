@@ -94,7 +94,7 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
       <section className='mt-0.5'>
-        {bookmarksRefLoading || tweetLoading ? (
+        {bookmarksRefLoading || moviesLoading ? (
           <Loading className='mt-5' />
         ) : !bookmarksRef ? (
           <StatsEmpty
