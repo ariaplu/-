@@ -36,5 +36,5 @@ export function TweetParent({
 
   if (loading || !isParentAlreadyLoaded || !data) return null;
 
-  return <Tweet parentTweet {...data} />;
+  return <Movie parentTweet {...data} />;
 }
