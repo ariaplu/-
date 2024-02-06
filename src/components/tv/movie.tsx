@@ -33,7 +33,7 @@ export const variants: Variants = {
   exit: { opacity: 0, transition: { duration: 0.2 } }
 };
 
-export function Tweet(tweet: TweetProps): JSX.Element {
+export function Movie(movies: MovieProps): JSX.Element {
   const {
     id: moviesId,
     text,
