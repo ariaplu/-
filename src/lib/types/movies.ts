@@ -17,7 +17,7 @@ export type Movie = {
 
 export type MovieWithUser = Movie & { user: User };
 
-export const moviesConverter: FirestoreDataConverter<Tweet> = {
+export const moviesConverter: FirestoreDataConverter<Movie> = {
   toFirestore(movies) {
     return { ...movies };
   },
