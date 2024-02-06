@@ -8,7 +8,7 @@ import { useCollection } from '@lib/hooks/useCollection';
 import { useArrayDocument } from '@lib/hooks/useArrayDocument';
 import { clearAllBookmarks } from '@lib/firebase/utils';
 import {
-  tweetsCollection,
+  moviesCollection,
   userBookmarksCollection
 } from '@lib/firebase/collections';
 import { HomeLayout, ProtectedLayout } from '@components/layout/common-layout';
@@ -43,9 +43,9 @@ export default function Bookmarks(): JSX.Element {
     [bookmarksRef]
   );
 
-  const { data: tweetData, loading: tweetLoading } = useArrayDocument(
-    tweetIds,
-    tweetsCollection,
+  const { data: moviesData, loading: moviesLoading } = useArrayDocument(
+    moviesIds,
+    moviesCollection,
     { includeUser: true }
   );
 
@@ -104,8 +104,8 @@ export default function Bookmarks(): JSX.Element {
           />
         ) : (
           <AnimatePresence mode='popLayout'>
-            {tweetData?.map((tweet) => (
-              <Tweet {...tweet} key={tweet.id} />
+            {moviesData?.map((movies) => (
+              <movies {...movies} key={movies.id} />
             ))}
           </AnimatePresence>
         )}
