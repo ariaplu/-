@@ -19,7 +19,7 @@ export type MovieWithUser = Movie & { user: User };
 
 export const moviesConverter: FirestoreDataConverter<Movie> = {
   toFirestore(movies) {
-    return { ...movie};
+    return { ...movies };
   },
   fromFirestore(snapshot, options) {
     const { id } = snapshot;
