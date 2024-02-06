@@ -19,7 +19,7 @@ import type { Variants } from 'framer-motion';
 import type { Movie } from '@lib/types/movies';
 import type { User } from '@lib/types/user';
 
-export type TweetProps = Tweet & {
+export type MovieProps = Movie & {
   user: User;
   modal?: boolean;
   pinned?: boolean;
