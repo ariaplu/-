@@ -2,6 +2,7 @@ import { collection } from 'firebase/firestore';
 import { userConverter } from '@lib/types/user';
 import { tweetConverter } from '@lib/types/tweet';
 import { bookmarkConverter } from '@lib/types/bookmark';
+import { moviesConverter } from '@lib/types/movies';
 import { statsConverter } from '@lib/types/stats';
 import { db } from './app';
 import type { CollectionReference } from 'firebase/firestore';
