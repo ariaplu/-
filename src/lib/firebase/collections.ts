@@ -15,6 +15,9 @@ export const usersCollection = collection(db, 'users').withConverter(
 export const tweetsCollection = collection(db, 'tweets').withConverter(
   tweetConverter
 );
+export const moviesCollection = collection(db, "movies").withConverter(
+  moviesConverter
+);
 
 export function userBookmarksCollection(
   id: string
