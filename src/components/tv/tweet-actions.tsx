@@ -97,7 +97,7 @@ export function TweetActions({
   const handleRemove = async (): Promise<void> => {
     if (viewTweet)
       if (parentId) {
-        const parentSnapshot = await getDoc(doc(tweetsCollection, parentId));
+        const parentSnapshot = await getDoc(doc(moviesCollection, parentId));
         if (parentSnapshot.exists()) {
           await push(`/&/${parentId}`, undefined, { scroll: false });
           delayScroll(200)();
