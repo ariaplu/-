@@ -88,7 +88,7 @@ export function Movie(movies: MovieProps): JSX.Element {
         open={open}
         closeModal={closeModal}
       >
-        <TweetReplyModal movies={movies} closeModal={closeModal} />
+        <TweetReplyModal tweet={tweet} closeModal={closeModal} />
       </Modal>
       <Link href={moviesLink} scroll={!reply}>
         <a
