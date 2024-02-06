@@ -117,7 +117,7 @@ export function TweetStats({
           onClick={manageRetweet(
             tweetIsRetweeted ? 'unretweet' : 'retweet',
             userId,
-            tweetId
+            moviesId
           )}
         />
         <TweetOption
