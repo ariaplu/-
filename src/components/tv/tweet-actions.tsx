@@ -37,7 +37,7 @@ export const variants: Variants = {
   exit: { opacity: 0, y: -25, transition: { duration: 0.2 } }
 };
 
-type TweetActionsProps = Pick<Tweet, 'createdBy'> & {
+type TweetActionsProps = Pick<Movie, 'createdBy'> & {
   isOwner: boolean;
   ownerId: string;
   moviesId: string;
