@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Tweet } from './movie';
+import { Movie } from './movie';
 import { TweetParent } from './tweet-parent';
 import type { TweetWithUser } from '@lib/types/tweet';
 
