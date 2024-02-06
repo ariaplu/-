@@ -92,7 +92,7 @@ export function TweetActions({
   const { id: userId, following, pinnedTweet } = user as User;
 
   const isInAdminControl = isAdmin && !isOwner;
-  const tweetIsPinned = pinnedTweet === tweetId;
+  const tweetIsPinned = pinnedTweet === moviesId;
 
   const handleRemove = async (): Promise<void> => {
     if (viewTweet)
@@ -120,7 +120,7 @@ export function TweetActions({
   };
 
   const handlePin = async (): Promise<void> => {
-    await managePinnedTweet(tweetIsPinned ? 'unpin' : 'pin', userId, tweetId);
+    await managePinnedTweet(tweetIsPinned ? 'unpin' : 'pin', userId, moviesId);
     toast.success(
       `Your tweet was ${tweetIsPinned ? 'unpinned' : 'pinned'} to your profile`
     );
