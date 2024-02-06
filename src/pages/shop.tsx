@@ -57,15 +57,15 @@ export default function Bookmarks(): JSX.Element {
 
   return (
     <MainContainer>
-      <SEO title='tv | Aria+' />
+      <SEO title='Shop | Aria+' />
       <Modal
         modalClassName='max-w-xs bg-main-background w-full p-8 rounded-2xl'
         open={open}
         closeModal={closeModal}
       >
         <ActionModal
-          title='Clear all your downloads?'
-          description='This can’t be undone and you’ll remove all your downloaded movies and favourite shows that you’ve downloaded.'
+          title='Clear Cart?'
+          description='This can’t be undone and you’ll remove all items from your cart.'
           mainBtnClassName='bg-accent-red hover:bg-accent-red/90 active:bg-accent-red/75 accent-tab 
                             focus-visible:bg-accent-red/90'
           mainBtnLabel='Clear'
@@ -75,7 +75,7 @@ export default function Bookmarks(): JSX.Element {
       </Modal>
       <MainHeader className='flex items-center justify-between'>
         <div className='-mb-1 flex flex-col'>
-          <h2 className='-mt-1 text-xl font-bold'>tv</h2>
+          <h2 className='-mt-1 text-xl font-bold'>Shop</h2>
           <p className='text-xs text-light-secondary dark:text-dark-secondary'>
             @{user?.username}
           </p>
