@@ -44,7 +44,7 @@ export default function Bookmarks(): JSX.Element {
   );
 
   const { data: moviesData, loading: moviesLoading } = useArrayDocument(
-    moviesId,
+    movieIds,
     moviesCollection,
     { includeUser: true }
   );
