@@ -35,7 +35,7 @@ export const variants: Variants = {
 
 export function Tweet(tweet: TweetProps): JSX.Element {
   const {
-    id: tweetId,
+    id: moviesId,
     text,
     modal,
     images,
@@ -134,7 +134,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
                     <TweetActions
                       isOwner={isOwner}
                       ownerId={ownerId}
-                      tweetId={tweetId}
+                      moviesId={moviesId}
                       parentId={parentId}
                       username={username}
                       hasImages={!!images}
@@ -174,7 +174,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
                     reply={reply}
                     userId={userId}
                     isOwner={isOwner}
-                    tweetId={tweetId}
+                    moviesId={moviesId}
                     userLikes={userLikes}
                     userReplies={userReplies}
                     userRetweets={userRetweets}
