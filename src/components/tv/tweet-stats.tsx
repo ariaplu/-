@@ -15,7 +15,7 @@ type TweetStatsProps = Pick<
   reply?: boolean;
   userId: string;
   isOwner: boolean;
-  tweetId: string;
+  moviesId: string;
   viewTweet?: boolean;
   openModal?: () => void;
 };
@@ -24,7 +24,7 @@ export function TweetStats({
   reply,
   userId,
   isOwner,
-  tweetId,
+  moviesId,
   userLikes,
   viewTweet,
   userRetweets,
