@@ -7,7 +7,7 @@ import cn from 'clsx';
 import { toast } from 'react-hot-toast';
 import { useAuth } from '@lib/context/auth-context';
 import { useModal } from '@lib/hooks/useModal';
-import { tweetsCollection } from '@lib/firebase/collections';
+import { moviesCollection } from '@lib/firebase/collections';
 import {
   removeTweet,
   manageReply,
@@ -24,7 +24,7 @@ import { ToolTip } from '@components/ui/tooltip';
 import { HeroIcon } from '@components/ui/hero-icon';
 import { CustomIcon } from '@components/ui/custom-icon';
 import type { Variants } from 'framer-motion';
-import type { Tweet } from '@lib/types/tweet';
+import type { Movie } from '@lib/types/movies';
 import type { User } from '@lib/types/user';
 
 export const variants: Variants = {
@@ -67,7 +67,7 @@ const pinModalData: Readonly<PinModalData[]> = [
 export function TweetActions({
   isOwner,
   ownerId,
-  tweetId,
+  moviesId,
   parentId,
   username,
   hasImages,
