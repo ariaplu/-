@@ -135,10 +135,10 @@ export function TweetStats({
           onClick={manageLike(
             tweetIsLiked ? 'unlike' : 'like',
             userId,
-            tweetId
+            moviesId
           )}
         />
-        <TweetShare userId={userId} tweetId={tweetId} viewTweet={viewTweet} />
+        <TweetShare userId={userId} moviesId={moviesId} viewTweet={viewTweet} />
         {isOwner && (
           <TweetOption
             className='hover:text-accent-blue focus-visible:text-accent-blue'
