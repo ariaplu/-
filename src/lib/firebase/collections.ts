@@ -16,7 +16,7 @@ export const usersCollection = collection(db, 'users').withConverter(
 export const tweetsCollection = collection(db, 'tweets').withConverter(
   tweetConverter
 );
-export const moviesCollection = collection(db, "movies").withConverter(
+export const moviesCollection = collection(db, 'movies').withConverter(
   moviesConverter
 );
 
