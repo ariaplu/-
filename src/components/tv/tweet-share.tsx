@@ -14,13 +14,13 @@ import { variants } from './tweet-actions';
 
 type TweetShareProps = {
   userId: string;
-  tweetId: string;
+  moviesId: string;
   viewTweet?: boolean;
 };
 
 export function TweetShare({
   userId,
-  tweetId,
+  moviesId,
   viewTweet
 }: TweetShareProps): JSX.Element {
   const { userBookmarks } = useAuth();
@@ -49,11 +49,11 @@ export function TweetShare({
 
   const handleCopy = (closeMenu: () => void) => async (): Promise<void> => {
     closeMenu();
-    await navigator.clipboard.writeText(`${siteURL}/&/${tweetId}`);
+    await navigator.clipboard.writeText(`${siteURL}/&/${moviesId}`);
     toast.success('Copied to clipboard');
   };
 
-  const tweetIsBookmarked = !!userBookmarks?.some(({ id }) => id === tweetId);
+  const tweetIsBookmarked = !!userBookmarks?.some(({ id }) => id === moviesId);
 
   return (
     <Popover className='relative'>
@@ -99,7 +99,7 @@ export function TweetShare({
                     className='accent-tab flex w-full gap-3 rounded-md rounded-t-none p-4 hover:bg-main-sidebar-background'
                     as={Button}
                     onClick={preventBubbling(
-                      handleBookmark(close, 'bookmark', userId, tweetId)
+                      handleBookmark(close, 'bookmark', userId, moviesId)
                     )}
                   >
                     <HeroIcon iconName='BookmarkIcon' />
@@ -110,7 +110,7 @@ export function TweetShare({
                     className='accent-tab flex w-full gap-3 rounded-md rounded-t-none p-4 hover:bg-main-sidebar-background'
                     as={Button}
                     onClick={preventBubbling(
-                      handleBookmark(close, 'unbookmark', userId, tweetId)
+                      handleBookmark(close, 'unbookmark', userId, moviesId)
                     )}
                   >
                     <HeroIcon iconName='BookmarkSlashIcon' />
