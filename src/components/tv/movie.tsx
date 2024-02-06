@@ -134,7 +134,7 @@ export function Movie(movies: MovieProps): JSX.Element {
                     <TweetActions
                       isOwner={isOwner}
                       ownerId={ownerId}
-                      moviesId={moviesId}
+                      moviesId={string}
                       parentId={parentId}
                       username={username}
                       hasImages={!!images}
