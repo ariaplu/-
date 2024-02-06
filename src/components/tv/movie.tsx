@@ -109,7 +109,7 @@ export function Movie(movies: MovieProps): JSX.Element {
                 </TweetStatus>
               ) : (
                 tweetIsRetweeted && (
-                  <TweetStatus type='movies'>
+                  <TweetStatus type='tweet'>
                     <Link href={profileUsername as string}>
                       <a className='custom-underline truncate text-sm font-bold'>
                         {userId === profileId ? 'You' : profileName} Retweeted
