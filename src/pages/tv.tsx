@@ -18,7 +18,7 @@ import { MainHeader } from '@components/home/main-header';
 import { MainContainer } from '@components/home/main-container';
 import { Modal } from '@components/modal/modal';
 import { ActionModal } from '@components/modal/action-modal';
-import { Tweet } from '@components/tv/movie';
+import { Movie } from '@components/tv/movie';
 import { StatsEmpty } from '@components/tweet/stats-empty';
 import { Button } from '@components/ui/button';
 import { ToolTip } from '@components/ui/tooltip';
@@ -38,7 +38,7 @@ export default function Bookmarks(): JSX.Element {
     { allowNull: true }
   );
 
-  const tweetIds = useMemo(
+  const movieIds = useMemo(
     () => bookmarksRef?.map(({ id }) => id) ?? [],
     [bookmarksRef]
   );
@@ -105,7 +105,7 @@ export default function Bookmarks(): JSX.Element {
         ) : (
           <AnimatePresence mode='popLayout'>
             {moviesData?.map((movies) => (
-              <movies {...movies} key={movies.id} />
+              <Movie {...movies} key={movies.id} />
             ))}
           </AnimatePresence>
         )}
