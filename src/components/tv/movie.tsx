@@ -88,7 +88,7 @@ export function Movie(movies: MovieProps): JSX.Element {
         open={open}
         closeModal={closeModal}
       >
-        <TweetReplyModal tweet={tweet} closeModal={closeModal} />
+        <TweetReplyModal movies={movies} closeModal={closeModal} />
       </Modal>
       <Link href={moviesLink} scroll={!reply}>
         <a
@@ -109,7 +109,7 @@ export function Movie(movies: MovieProps): JSX.Element {
                 </TweetStatus>
               ) : (
                 tweetIsRetweeted && (
-                  <TweetStatus type='tweet'>
+                  <TweetStatus type='movies'>
                     <Link href={profileUsername as string}>
                       <a className='custom-underline truncate text-sm font-bold'>
                         {userId === profileId ? 'You' : profileName} Retweeted
