@@ -164,7 +164,7 @@ export function Movie(movies: MovieProps): JSX.Element {
               <div className='mt-1 flex flex-col gap-2'>
                 {images && (
                   <ImagePreview
-                    movies
+                    tweet
                     imagesPreview={images}
                     previewCount={images.length}
                   />
