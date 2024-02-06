@@ -16,7 +16,7 @@ import { TweetStatus } from './tweet-status';
 import { TweetStats } from './tweet-stats';
 import { TweetDate } from './tweet-date';
 import type { Variants } from 'framer-motion';
-import type { Tweet } from '@lib/types/tweet';
+import type { Movie } from '@lib/types/movies';
 import type { User } from '@lib/types/user';
 
 export type TweetProps = Tweet & {
@@ -57,7 +57,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
 
   const { open, openModal, closeModal } = useModal();
 
-  const tweetLink = `/&/${tweetId}`;
+  const moviesLink = `/&/${moviesId}`;
 
   const userId = user?.id as string;
 
@@ -90,7 +90,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
       >
         <TweetReplyModal tweet={tweet} closeModal={closeModal} />
       </Modal>
-      <Link href={tweetLink} scroll={!reply}>
+      <Link href={moviesLink} scroll={!reply}>
         <a
           className={cn(
             `accent-tab hover-card relative flex flex-col 
@@ -164,7 +164,7 @@ export function Tweet(tweet: TweetProps): JSX.Element {
               <div className='mt-1 flex flex-col gap-2'>
                 {images && (
                   <ImagePreview
-                    tweet
+                    movies
                     imagesPreview={images}
                     previewCount={images.length}
                   />
