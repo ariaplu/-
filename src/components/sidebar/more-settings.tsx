@@ -89,6 +89,23 @@ export function MoreSettings(): JSX.Element {
                       </MenuLink>
                     )}
                   </Menu.Item>
+
+                  <Menu.Item>
+                    {({ active }): JSX.Element => (
+                      <MenuLink
+                        className={cn(
+                          'flex w-full cursor-not-allowed gap-3 rounded-t-md p-4 duration-200',
+                          active && 'bg-main-sidebar-background'
+                        )}
+                        href='/settings'
+                        onClick={preventBubbling()}
+                      >
+                        <HeroIcon iconName='Cog8ToothIcon' />
+                        API
+                      </MenuLink>
+                    )}
+                  </Menu.Item>
+                  
                   <Menu.Item>
                     {({ active }): JSX.Element => (
                       <Button
