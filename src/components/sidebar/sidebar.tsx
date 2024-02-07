@@ -52,6 +52,12 @@ const navLinks: Readonly<NavLink[]> = [
     canBeHidden: true
   },
   {
+    href: '/tv',
+    linkName: 'tv',
+    iconName: 'BookmarkIcon',
+    canBeHidden: true
+  },
+  {
     href: '/lists',
     linkName: 'Lists',
     iconName: 'Bars3BottomLeftIcon',
@@ -106,6 +112,12 @@ export function Sidebar(): JSX.Element {
           useSkeleton
        />
               </a>
+        <Link href='/tv'>
+              <a
+                className='custom-button main-tab text-accent-blue transition hover:bg-light-primary/10 
+                           focus-visible:bg-accent-blue/10 focus-visible:!ring-accent-blue/80
+                           dark:text-twitter-icon dark:hover:bg-dark-primary/10'
+              >
             </Link>
           </h1>
           <nav className='flex items-center justify-around xs:flex-col xs:justify-center xl:block'>
