@@ -41,13 +41,13 @@ const navLinks: Readonly<NavLink[]> = [
   {
     href: '/messages',
     linkName: 'Messages',
-    iconName: 'TvIcon',
+    iconName: 'EnvelopeIcon',
     disabled: true
   },
   {
     href: '/tv',
     linkName: 'tv',
-    iconName: 'EnvelopeIcon',
+    iconName: 'TvIcon',
     canBeHidden: true
   },
   {
