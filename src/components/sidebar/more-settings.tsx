@@ -100,7 +100,7 @@ export function MoreSettings(): JSX.Element {
                         href='/settings'
                         onClick={preventBubbling()}
                       >
-                        <HeroIcon iconName='Cog8ToothIcon' />
+                        <HeroIcon iconName='ArrowUpRightIcon' />
                         API
                       </MenuLink>
                     )}
