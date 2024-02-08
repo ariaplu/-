@@ -119,7 +119,7 @@ export function UpdateUsername(): JSX.Element {
                    dark:active:bg-dark-primary/20'
         onClick={openModal}
       >
-        <HeroIcon className='h-5 w-5' iconName='SparklesIcon' />
+        <HeroIcon className='h-5 w-5' iconName='AtSymbolIcon' />
         <ToolTip tip='Top tweets' />
       </Button>
     </>
