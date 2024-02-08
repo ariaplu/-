@@ -36,12 +36,12 @@ const navLinks: Readonly<NavLink[]> = [
     href: '/notifications',
     linkName: 'Notifications',
     iconName: 'BellIcon',
-    disabled: true
+    canBeHidden: true
   },
   {
     href: '/messages',
     linkName: 'Messages',
-    iconName: 'EnvelopeIcon',
+    iconName: 'TvIcon',
     disabled: true
   },
   {
