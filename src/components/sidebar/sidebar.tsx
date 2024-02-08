@@ -46,14 +46,14 @@ const navLinks: Readonly<NavLink[]> = [
     disabled: true
   },
   {
-    href: '/bookmarks',
-    linkName: 'Bookmarks',
-    iconName: 'BookmarkIcon',
+    href: '/tv',
+    linkName: 'tv',
+    iconName: 'EnvelopeIcon',
     canBeHidden: true
   },
   {
-    href: '/tv',
-    linkName: 'tv',
+    href: '/bookmarks',
+    linkName: 'Bookmarks',
     iconName: 'BookmarkIcon',
     canBeHidden: true
   },
@@ -112,6 +112,7 @@ export function Sidebar(): JSX.Element {
           useSkeleton
        />
               </a>
+            </Link>
           </h1>
           <nav className='flex items-center justify-around xs:flex-col xs:justify-center xl:block'>
             {navLinks.map(({ ...linkData }) => (
