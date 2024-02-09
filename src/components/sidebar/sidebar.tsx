@@ -23,14 +23,8 @@ export type NavLink = {
 const navLinks: Readonly<NavLink[]> = [
   {
     href: '/home',
-    linkName: 'Home',
-    iconName: 'HomeIcon'
-  },
-  {
-    href: '/explore',
     linkName: 'Explore',
-    iconName: 'HashtagIcon',
-    canBeHidden: true
+    iconName: 'HashtagIcon'
   },
   {
     href: '/notifications',
