@@ -82,7 +82,7 @@ export function MoreSettings(): JSX.Element {
                           active && 'bg-main-sidebar-background'
                         )}
                         href='/pay'
-                        onClick={open}
+                    
                       >
                         <HeroIcon iconName='CreditCardIcon' />
                       Pay
