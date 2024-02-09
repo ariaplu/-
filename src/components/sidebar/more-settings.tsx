@@ -46,7 +46,7 @@ export function MoreSettings(): JSX.Element {
               >
                 <HeroIcon
                   className='h-7 w-7'
-                  iconName='EllipsisHorizontalCircleIcon'
+                  iconName='ChevronUpIcon'
                 />{' '}
                 <p className='hidden xl:block'>More</p>
               </div>
