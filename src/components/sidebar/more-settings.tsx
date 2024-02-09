@@ -82,7 +82,7 @@ export function MoreSettings(): JSX.Element {
                           active && 'bg-main-sidebar-background'
                         )}
                         href='/pay'
-                        onClick={preventBubbling()}
+                        onClick={()}
                       >
                         <HeroIcon iconName='CreditCardIcon' />
                       Pay
