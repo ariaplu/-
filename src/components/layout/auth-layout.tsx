@@ -17,7 +17,7 @@ export function AuthLayout({ children }: LayoutProps): JSX.Element {
 
       if (user) {
         await sleep(500);
-        void replace('/home');
+        void replace('/explore');
       } else if (!loading) {
         await sleep(500);
         setPending(false);
