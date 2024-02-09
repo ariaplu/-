@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
       <SEO title='Explore | Aria+' />
       <MainHeader
         useMobileSidebar
-        title='Home'
+        title='Explore'
         className='flex items-center justify-between'
       >
         <UpdateUsername />
