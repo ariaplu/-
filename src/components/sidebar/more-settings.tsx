@@ -67,7 +67,6 @@ export function MoreSettings(): JSX.Element {
                           active && 'bg-main-sidebar-background'
                         )}
                         href='/settings'
-                        onClick={preventBubbling()}
                       >
                         <HeroIcon iconName='Cog8ToothIcon' />
                         Settings and privacy
