@@ -1,4 +1,4 @@
-import { BlogData } from '/db';
+import { BlogData } from './db';
 import Link from 'next/link';
 
 interface BlogProps {
