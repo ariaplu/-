@@ -9,11 +9,11 @@ const Navbar: React.FC<NavbarProps> = ({ sections }) => {
   const router = useRouter();
 
   return (
-    <nav className="flex items-center justify-between py-4 px-6 shadow-md">
-      <Link href="/">
-        <a className="text-2xl font-bold text-gray-800">Twitter</a>
+    <nav className='flex items-center justify-between py-4 px-6 shadow-md'>
+      <Link href='/'>
+        <a className='text-2xl font-bold text-gray-800'>Twitter</a>
       </Link>
-      <ul className="flex space-x-4">
+      <ul className='flex space-x-4'>
         {sections.map((section) => (
           <li key={section.href}>
             <Link href={section.href}>
