@@ -1,10 +1,6 @@
-interface BlogPost {
-  post_id: number;
-  title: string;
-  details: string;
-}
+import { NextApiRequest, NextApiResponse } from 'next';
 
-const blogData: BlogPost[] = [
+const blogData = [
   {
     post_id: 1,
     title: "You Are Not Just Talented, You Are Spiritually Gifted",
@@ -13,3 +9,7 @@ const blogData: BlogPost[] = [
   },
   // ... other blog posts
 ];
+
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  res.status(200).json(blogData);
+}
