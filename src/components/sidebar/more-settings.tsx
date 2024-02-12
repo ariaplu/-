@@ -66,10 +66,10 @@ export function MoreSettings(): JSX.Element {
                           'flex w-full gap-3 rounded-t-md p-4 duration-200',
                           active && 'bg-main-sidebar-background'
                         )}
-                        href='/settings'
+                        href='/games'
                       >
-                        <HeroIcon iconName='Cog8ToothIcon' />
-                        Settings and privacy
+                        <HeroIcon iconName='PuzzlePieceIcon' />
+                        Games
                       </MenuLink>
                     )}
                   </Menu.Item>
@@ -99,7 +99,7 @@ export function MoreSettings(): JSX.Element {
                         onClick={preventBubbling()}
                       >
                         <HeroIcon iconName='QuestionMarkCircleIcon' />
-                        Help center
+                        Events
                       </MenuLink>
                     )}
                   </Menu.Item>
@@ -118,7 +118,62 @@ export function MoreSettings(): JSX.Element {
                       </MenuLink>
                     )}
                   </Menu.Item>
-                  
+                  <Menu.Item>
+                    {({ active }): JSX.Element => (
+                      <MenuLink
+                        className={cn(
+                          'flex w-full cursor-not-allowed gap-3 rounded-t-md p-4 duration-200',
+                          active && 'bg-main-sidebar-background'
+                        )}
+                        href='/communities'
+                      >
+                        <HeroIcon iconName='Squares2x2Icon' />
+                        Communities
+                      </MenuLink>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }): JSX.Element => (
+                      <MenuLink
+                        className={cn(
+                          'flex w-full cursor-not-allowed gap-3 rounded-t-md p-4 duration-200',
+                          active && 'bg-main-sidebar-background'
+                        )}
+                        href='/events'
+                      >
+                        <HeroIcon iconName='CalendarIcon' />
+                        Events
+                      </MenuLink>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }): JSX.Element => (
+                      <MenuLink
+                        className={cn(
+                          'flex w-full cursor-not-allowed gap-3 rounded-t-md p-4 duration-200',
+                          active && 'bg-main-sidebar-background'
+                        )}
+                        href='/travel'
+                      >
+                        <HeroIcon iconName='GlobeAmericasIcon' />
+                        Travel
+                      </MenuLink>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }): JSX.Element => (
+                      <MenuLink
+                        className={cn(
+                          'flex w-full cursor-not-allowed gap-3 rounded-t-md p-4 duration-200',
+                          active && 'bg-main-sidebar-background'
+                        )}
+                        href='/learn'
+                      >
+                        <HeroIcon iconName='PencilIcon' />
+                        Learn
+                      </MenuLink>
+                    )}
+                  </Menu.Item>
                   <Menu.Item>
                     {({ active }): JSX.Element => (
                       <Button
