@@ -50,12 +50,19 @@ const navLinks: Readonly<NavLink[]> = [
     iconName: 'TvIcon',
     canBeHidden: true
   },
-    {
+  {
     href: '/music',
     linkName: 'Music',
     iconName: 'MusicalNoteIcon',
     canBeHidden: true
+  },
+ {
+    href: '/market',
+    linkName: 'Market',
+    iconName: 'ShoppingBagIcon',
+    canBeHidden: true
   }
+];
 ];
 
 export function Sidebar(): JSX.Element {
