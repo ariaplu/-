@@ -111,11 +111,10 @@ export function MoreSettings(): JSX.Element {
                           'flex w-full cursor-not-allowed gap-3 rounded-t-md p-4 duration-200',
                           active && 'bg-main-sidebar-background'
                         )}
-                        href='/settings'
-                        onClick={preventBubbling()}
+                        href='/bookmarks'
                       >
-                        <HeroIcon iconName='ArrowUpRightIcon' />
-                        API
+                        <HeroIcon iconName='BookmarkIcon' />
+                        Bookmarks
                       </MenuLink>
                     )}
                   </Menu.Item>
