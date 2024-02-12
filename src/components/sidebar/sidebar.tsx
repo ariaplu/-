@@ -39,22 +39,21 @@ const navLinks: Readonly<NavLink[]> = [
     disabled: true
   },
   {
+    href: '/ai',
+    linkName: 'Ai',
+    iconName: 'XMarkIcon',
+    canBeHidden: true
+  },
+  {
     href: '/tv',
     linkName: 'tv',
     iconName: 'TvIcon',
     canBeHidden: true
   },
-  {
-    href: '/bookmarks',
-    linkName: 'Bookmarks',
-    iconName: 'BookmarkIcon',
-    canBeHidden: true
-  },
-  {
-    href: '/lists',
-    linkName: 'Lists',
-    iconName: 'Bars3BottomLeftIcon',
-    disabled: true,
+    {
+    href: '/music',
+    linkName: 'Music',
+    iconName: 'MusicalNoteIcon',
     canBeHidden: true
   }
 ];
