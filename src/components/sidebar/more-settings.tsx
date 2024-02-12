@@ -127,7 +127,7 @@ export function MoreSettings(): JSX.Element {
                         )}
                         href='/communities'
                       >
-                        <HeroIcon iconName='Squares2x2Icon' />
+                        <HeroIcon iconName='Squares2X2Icon' />
                         Communities
                       </MenuLink>
                     )}
