@@ -63,7 +63,6 @@ const navLinks: Readonly<NavLink[]> = [
     canBeHidden: true
   }
 ];
-];
 
 export function Sidebar(): JSX.Element {
   const { user } = useAuth();
