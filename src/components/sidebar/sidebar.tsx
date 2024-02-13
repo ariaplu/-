@@ -47,7 +47,7 @@ const navLinks: Readonly<NavLink[]> = [
   {
     href: '/tv',
     linkName: 'tv',
-    iconName: 'TvIcon',
+    iconName: 'FilmIcon',
     canBeHidden: true
   },
   {
