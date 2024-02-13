@@ -90,7 +90,7 @@ export function UserTooltip({
             <div className='flex justify-between'>
               <div className='mb-10'>
                 <UserAvatar
-                  className='absolute -translate-y-1/2 bg-main-background p-1 
+                  className='absolute -translate-y-1/2 overflow-visible bg-main-background p-1 
                              hover:brightness-100 :[transition:200ms]
                              [&:hover>figure>span]:brightness-75'
                   src={photoURL}
