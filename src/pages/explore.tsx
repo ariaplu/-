@@ -36,6 +36,7 @@ export default function Home(): JSX.Element {
         <UpdateUsername />
 
       </MainHeader>
+      <UserNav />
       {!isMobile && <Input />}
       <section className='mt-0.5 xs:mt-0'>
         {loading ? (
@@ -44,7 +45,6 @@ export default function Home(): JSX.Element {
           <Error message='Something went wrong' />
         ) : (
           <>
-     <UserNav />
             <AnimatePresence mode='popLayout'>
               {data.map((tweet) => (
                 <Tweet {...tweet} key={tweet.id} />
