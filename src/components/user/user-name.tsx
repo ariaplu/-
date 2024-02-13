@@ -35,7 +35,7 @@ export function UserName({
         {verified && (
           <i>
             <HeroIcon
-              className={cn('fill-yellow-900', iconClassName ?? 'h-5 w-5')}
+              className={cn('fill-yellow-400', iconClassName ?? 'h-5 w-5')}
               iconName='CheckBadgeIcon'
               solid
             />
