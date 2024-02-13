@@ -20,8 +20,8 @@ const allNavs = [
   ]
 ] as const;
 
-export function UserNav({ follow }: UserNavProps): JSX.Element {
-  const userNav = allNavs[+!!follow];
+export function ExploreNav({ follow }: UserNavProps): JSX.Element {
+  const ExploreNav = allNavs[+!!follow];
 
   return (
     <motion.nav
