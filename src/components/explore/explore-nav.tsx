@@ -21,7 +21,7 @@ const allNavs = [
 ] as const;
 
 export function ExploreNav({ follow }: UserNavProps): JSX.Element {
-  const ExploreNav = allNavs[+!!follow];
+  const exploreNav = allNavs[+!!follow];
 
   return (
     <motion.nav
@@ -33,7 +33,7 @@ export function ExploreNav({ follow }: UserNavProps): JSX.Element {
       {...variants}
       exit={undefined}
     >
-      {userNav.map(({ name, path }) => (
+      {exploreNav.map(({ name, path }) => (
         <UserNavLink name={name} path={path} key={name} />
       ))}
     </motion.nav>
