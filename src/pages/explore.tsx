@@ -14,7 +14,7 @@ import { Tweet } from '@components/tweet/tweet';
 import { Loading } from '@components/ui/loading';
 import { Error } from '@components/ui/error';
 import type { ReactElement, ReactNode } from 'react';
-import { UserNav } from '@components/user/user-nav';
+import { ExploreNav } from '@components/explore/explore-nav';
 
 export default function Home(): JSX.Element {
   const { isMobile } = useWindow();
@@ -36,7 +36,7 @@ export default function Home(): JSX.Element {
         <UpdateUsername />
 
       </MainHeader>
-      <UserNav />
+      <ExploreNav />
       {!isMobile && <Input />}
       <section className='mt-0.5 xs:mt-0'>
         {loading ? (
