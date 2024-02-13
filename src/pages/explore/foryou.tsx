@@ -12,6 +12,7 @@ import { Button } from '@components/ui/button';
 import { ToolTip } from '@components/ui/tooltip';
 import { HeroIcon } from '@components/ui/hero-icon';
 import type { ReactElement, ReactNode } from 'react';
+import { ExploreNav } from '@components/explore/explore-nav';
 
 export default function Bookmarks(): JSX.Element {
   const { back } = useRouter();
@@ -28,6 +29,7 @@ export default function Bookmarks(): JSX.Element {
           <ToolTip tip='Settings' />
         </Button>
       </MainHeader>
+      <ExploreNav />
       <AsideTrends inTrendsPage />
     </MainContainer>
   );
