@@ -1,78 +1,42 @@
-
-import { AnimatePresence } from 'framer-motion';
-import { doc, query, where, orderBy } from 'firebase/firestore';
-import { useCollection } from '@lib/hooks/useCollection';
-import { useDocument } from '@lib/hooks/useDocument';
-import { tweetsCollection } from '@lib/firebase/collections';
-import { useUser } from '@lib/context/user-context';
-import { UserLayout, ProtectedLayout } from '@components/layout/common-layout';
+import { useRouter } from 'next/router';
+import {
+  TrendsLayout,
+  ProtectedLayout
+} from '@components/layout/common-layout';
 import { MainLayout } from '@components/layout/main-layout';
 import { SEO } from '@components/common/seo';
-import { UserDataLayout } from '@components/layout/user-data-layout';
-import { UserHomeLayout } from '@components/layout/user-home-layout';
-import { Tweet } from '@components/tweet/tweet';
-import { Loading } from '@components/ui/loading';
-import { StatsEmpty } from '@components/tweet/stats-empty';
-import { TweetWithParent } from '@components/tweet/tweet-with-parent';
+import { MainHeader } from '@components/home/main-header';
+import { MainContainer } from '@components/home/main-container';
+import { AsideTrends } from '@components/aside/aside-trends';
+import { Button } from '@components/ui/button';
+import { ToolTip } from '@components/ui/tooltip';
+import { HeroIcon } from '@components/ui/hero-icon';
 import type { ReactElement, ReactNode } from 'react';
 
-export default function UserWithReplies(): JSX.Element {
-  const { user } = useUser();
-
-  const { id, name, username, pinnedTweet } = user ?? {};
-
-  const { data: pinnedData } = useDocument(
-    doc(tweetsCollection, pinnedTweet ?? 'null'),
-    {
-      disabled: !pinnedTweet,
-      allowNull: true,
-      includeUser: true
-    }
-  );
-
-  const { data, loading } = useCollection(
-    query(
-      tweetsCollection,
-      where('createdBy', '==', id),
-      orderBy('createdAt', 'desc')
-    ),
-    { includeUser: true, allowNull: true }
-  );
+export default function Bookmarks(): JSX.Element {
+  const { back } = useRouter();
 
   return (
-    <section>
-      <SEO
-        title={`Tweets with replies by ${name as string} (@${
-          username as string
-        }) / Twitter`}
-      />
-      {loading ? (
-        <Loading className='mt-5' />
-      ) : !data ? (
-        <StatsEmpty
-          title={`@${username as string} hasn't tweeted`}
-          description='When they do, their Tweets will show up here.'
-        />
-      ) : (
-        <AnimatePresence mode='popLayout'>
-          {pinnedData && (
-            <Tweet pinned {...pinnedData} key={`pinned-${pinnedData.id}`} />
-          )}
-          <TweetWithParent data={data} />
-        </AnimatePresence>
-      )}
-    </section>
+    <MainContainer>
+      <SEO title='Trends | Aria+' />
+      <MainHeader useActionButton title='Trends' action={back}>
+        <Button
+          className='dark-bg-tab group relative ml-auto cursor-not-allowed p-2 hover:bg-light-primary/10
+                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'
+        >
+          <HeroIcon className='h-5 w-5' iconName='Cog8ToothIcon' />
+          <ToolTip tip='Settings' />
+        </Button>
+      </MainHeader>
+      <AsideTrends inTrendsPage />
+    </MainContainer>
   );
 }
 
-UserWithReplies.getLayout = (page: ReactElement): ReactNode => (
+Bookmarks.getLayout = (page: ReactElement): ReactNode => (
   <ProtectedLayout>
     <MainLayout>
-      <UserLayout>
-        <UserDataLayout>
-          <UserHomeLayout>{page}</UserHomeLayout>
-        </UserDataLayout>
-      </UserLayout>
+      <TrendsLayout>{page}</TrendsLayout>
     </MainLayout>
   </ProtectedLayout>
 );
