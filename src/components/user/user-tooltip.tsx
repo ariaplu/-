@@ -91,7 +91,7 @@ export function UserTooltip({
               <div className='mb-10'>
                 <UserAvatar
                   className='absolute -translate-y-1/2 bg-main-background p-1 
-                             hover:brightness-100 [&>figure>span]:[transition:200ms]
+                             hover:brightness-100 :[transition:200ms]
                              [&:hover>figure>span]:brightness-75'
                   src={photoURL}
                   alt={name}
