@@ -34,7 +34,7 @@ export default function Home(): JSX.Element {
         className='flex items-center justify-between'
       >
         <UpdateUsername />
-          <UserNav />
+
       </MainHeader>
       {!isMobile && <Input />}
       <section className='mt-0.5 xs:mt-0'>
@@ -44,6 +44,7 @@ export default function Home(): JSX.Element {
           <Error message='Something went wrong' />
         ) : (
           <>
+     <UserNav />
             <AnimatePresence mode='popLayout'>
               {data.map((tweet) => (
                 <Tweet {...tweet} key={tweet.id} />
