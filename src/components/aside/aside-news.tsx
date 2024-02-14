@@ -41,7 +41,7 @@ export function AsideNews({ inTrendsPage }: AsideTrendsProps): JSX.Element {
             useSkeleton
             layout='fill'
             imgClassName='object-cover'
-            src='/assets/fw-cover.jpg'
+            src='https://people.com/thmb/9uGdBRNKu7lCYdCpKde438oTUrY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/taylor-swift-joined-by-maren-morris-060523-tout-c762fe47b0dc438d92a390bb10e69d83.jpg'
             alt=''
             key=''
           />
