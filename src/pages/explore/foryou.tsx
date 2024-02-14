@@ -37,8 +37,8 @@ export default function Bookmarks(): JSX.Element {
           src='https://prettylittlecode.github.io/w/i/feed/post/images/cover.jpg'
           alt='For You Banner'
           layout='fill'
-          width='100%'
-          height='100%'
+          width='500px'
+          height='100px'
           useSkeleton
        />
       <AsideTrends inTrendsPage />
