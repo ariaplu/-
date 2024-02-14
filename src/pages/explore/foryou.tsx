@@ -37,8 +37,8 @@ export default function Bookmarks(): JSX.Element {
           src='./assets/orange.jpg'
           alt='For You Banner'
           layout='fill'
-          width='fit'
-          height=''
+          width='auto'
+          height='auto'
           useSkeleton
        />
       <AsideTrends inTrendsPage />
