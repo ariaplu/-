@@ -37,14 +37,6 @@ export function AsideTrends({ inTrendsPage }: AsideTrendsProps): JSX.Element {
           'hover-animation rounded-2xl bg-main-sidebar-background'
       )}
     >
-      {loading ? (
-        <Loading />
-      ) : trends ? (
-        <motion.div
-          className={cn('inner:px-4 inner:py-3', inTrendsPage && 'mt-0.5')}
-          {...variants}
-        >
-          {!inTrendsPage && (
              <NextImage className='accent-tab relative mt-0.5 h-36 xs:h-48 sm:h-52 h-full w-full rounded-none p-0 transition hover:brightness-75'
             useSkeleton
             layout='fill'
@@ -53,6 +45,16 @@ export function AsideTrends({ inTrendsPage }: AsideTrendsProps): JSX.Element {
             alt=''
             key=''
           />
+      
+      {loading ? (
+        <Loading />
+      ) : trends ? (
+        <motion.div
+          className={cn('inner:px-4 inner:py-3', inTrendsPage && 'mt-0.5')}
+          {...variants}
+        >
+          {!inTrendsPage && (
+          
           )}
           {trends.map(({ name, query, tweet_volume, url }) => (
             <Link href={url} key={query}>
