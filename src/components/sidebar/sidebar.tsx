@@ -130,7 +130,7 @@ export function Sidebar(): JSX.Element {
                        xs:hover:bg-main-accent/90 xs:active:bg-main-accent/75 xl:w-11/12'
             onClick={openModal}
           > 
-        <ArplImage  className='block h-6 w-6 xl:hidden'
+        <ArplImage  className='block h-6 w-6 '
           imgClassName='arplicon'
           blurClassName='none'
           src='/assets/ariaplus.svg'
@@ -140,7 +140,7 @@ export function Sidebar(): JSX.Element {
           height='40px'
           useSkeleton
        />    
-            <p className='hidden xl:block'>&</p>
+
           </Button>
         </section>
         {!isMobile && <SidebarProfile />}
