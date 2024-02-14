@@ -34,11 +34,11 @@ export default function Bookmarks(): JSX.Element {
     <HeaderImage
           imgClassName='arplicon'
           blurClassName='none'
-          src='https://prettylittlecode.github.io/w/i/feed/post/images/cover.jpg'
+          src='./assets/orange.jpg'
           alt='For You Banner'
           layout='fill'
-          width='500px'
-          height='100px'
+          width='fit'
+          height=''
           useSkeleton
        />
       <AsideTrends inTrendsPage />
