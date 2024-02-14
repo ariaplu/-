@@ -136,6 +136,8 @@ export function Sidebar(): JSX.Element {
           src='/assets/ariaplus.svg'
           alt='Twitter banner'
           layout='fill'
+          width='15px'
+          height='15px'
           useSkeleton
        />    
 
