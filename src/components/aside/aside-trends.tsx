@@ -10,6 +10,7 @@ import { Button } from '@components/ui/button';
 import { ToolTip } from '@components/ui/tooltip';
 import { Loading } from '@components/ui/loading';
 import type { MotionProps } from 'framer-motion';
+import { NextImage } from '@components/ui/next-image';
 
 export const variants: MotionProps = {
   initial: { opacity: 0 },
@@ -54,6 +55,14 @@ export function AsideTrends({ inTrendsPage }: AsideTrendsProps): JSX.Element {
                 onClick={preventBubbling()}
               >
                 <div className='absolute right-2 top-2'>
+            <NextImage className='accent-tab relative mt-0.5 h-36 xs:h-48 sm:h-52 h-full w-full rounded-none p-0 transition hover:brightness-75'
+            useSkeleton
+            layout='fill'
+            imgClassName='object-cover'
+            src='/assets/orange.jpg'
+            alt=''
+            key=''
+          />
                   <Button
                     className='hover-animation group relative cursor-not-allowed p-2
                                hover:bg-accent-blue/10 focus-visible:bg-accent-blue/20 
