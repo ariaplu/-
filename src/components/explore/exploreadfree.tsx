@@ -18,4 +18,4 @@ const AdFreeComponent: React.FC<Props> = ({ onClick }) => {
   );
 };
 
-export default AdFreeComponent;
+export function  AdFreeComponent;
