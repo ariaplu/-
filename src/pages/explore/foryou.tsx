@@ -23,7 +23,7 @@ export default function Bookmarks(): JSX.Element {
       <SEO title='For You | Aria+' />
       <MainHeader useActionButton title='For You' action={back}>
         <Button
-          className='dark-bg-tab group  ml-auto cursor-not-allowed p-2 hover:bg-light-primary/10
+          className='dark-bg-tab group relative ml-auto cursor-not-allowed p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'
         >
           <HeroIcon className='h-5 w-5' iconName='Cog8ToothIcon' />
@@ -31,7 +31,7 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
       <ExploreNav />
-          <NextImage className='accent-tab relative h-full w-full rounded-none p-0 transition hover:brightness-75'
+          <NextImage className='accent-tab h-full w-full rounded-none p-0 transition hover:brightness-75'
             useSkeleton
             layout='fill'
             imgClassName='object-cover'
