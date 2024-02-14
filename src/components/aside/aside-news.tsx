@@ -37,7 +37,7 @@ export function AsideNews({ inTrendsPage }: AsideTrendsProps): JSX.Element {
           'hover-animation rounded-2xl bg-main-sidebar-background'
       )}
     >
-             <NextImage className='accent-tab relative mt-0.5 h-36 xs:h-48 sm:h-52 h-full w-full rounded-none p-0 transition hover:brightness-75'
+             <NextImage className='accent-tab relative mt-0.5 h-36 xs:h-48 sm:h-96 h-full w-full rounded-none p-0 transition hover:brightness-75'
             useSkeleton
             layout='fill'
             imgClassName='object-cover'
