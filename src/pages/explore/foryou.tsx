@@ -13,6 +13,7 @@ import { ToolTip } from '@components/ui/tooltip';
 import { HeroIcon } from '@components/ui/hero-icon';
 import type { ReactElement, ReactNode } from 'react';
 import { ExploreNav } from '@components/explore/explore-nav';
+import { HeaderImage } from '@components/ui/header-image';
 
 export default function Bookmarks(): JSX.Element {
   const { back } = useRouter();
@@ -30,6 +31,16 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
       <ExploreNav />
+    <ArplImage
+          imgClassName='arplicon'
+          blurClassName='none'
+          src='/assets/ariaplus.svg'
+          alt='For You Banner'
+          layout='fill'
+          width='100px'
+          height='100px'
+          useSkeleton
+       />
       <AsideTrends inTrendsPage />
     </MainContainer>
   );
