@@ -30,7 +30,9 @@ export default function Bookmarks(): JSX.Element {
           <ToolTip tip='Settings' />
         </Button>
       </MainHeader>
-      <ExploreNav />
+
+      <AsideTrends       
+        <ExploreNav />
           <NextImage className='accent-tab relative mt-0.5 h-36 xs:h-48 sm:h-52 h-full w-full rounded-none p-0 transition hover:brightness-75'
             useSkeleton
             layout='fill'
@@ -38,8 +40,7 @@ export default function Bookmarks(): JSX.Element {
             src='/assets/orange.jpg'
             alt=''
             key=''
-          />
-      <AsideTrends inTrendsPage />
+          /> inTrendsPage />
     </MainContainer>
   );
 }
