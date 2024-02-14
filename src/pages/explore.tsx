@@ -15,6 +15,7 @@ import { Loading } from '@components/ui/loading';
 import { Error } from '@components/ui/error';
 import type { ReactElement, ReactNode } from 'react';
 import { ExploreNav } from '@components/explore/explore-nav';
+import { AdFreeComponent } from '@components/explore/exploreadfree';
 import { NextImage } from '@components/ui/next-image';
 
 export default function Home(): JSX.Element {
@@ -49,6 +50,7 @@ export default function Home(): JSX.Element {
             alt=''
             key=''
           />
+       <AdFreeComponent /> 
         {loading ? (
           <Loading className='mt-5' />
         ) : !data ? (
