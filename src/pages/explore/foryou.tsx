@@ -13,7 +13,6 @@ import { ToolTip } from '@components/ui/tooltip';
 import { HeroIcon } from '@components/ui/hero-icon';
 import type { ReactElement, ReactNode } from 'react';
 import { ExploreNav } from '@components/explore/explore-nav';
-import { Button } from '@components/ui/button';
 import { NextImage } from '@components/ui/next-image';
 
 export default function Bookmarks(): JSX.Element {
