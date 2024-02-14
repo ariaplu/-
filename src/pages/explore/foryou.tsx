@@ -31,19 +31,14 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
       <ExploreNav />
-        <Button
-          className='accent-tab relative h-full w-full rounded-none p-0 transition hover:brightness-75'
-          
-        >
           <NextImage
             useSkeleton
             layout='fill'
             imgClassName='object-cover'
-            src='./assets/orange.jpg'
+            src='/assets/orange.jpg'
             alt=''
             key=''
           />
-        </Button>
       <AsideTrends inTrendsPage />
     </MainContainer>
   );
