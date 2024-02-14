@@ -13,7 +13,8 @@ import { ToolTip } from '@components/ui/tooltip';
 import { HeroIcon } from '@components/ui/hero-icon';
 import type { ReactElement, ReactNode } from 'react';
 import { ExploreNav } from '@components/explore/explore-nav';
-import { HeaderImage } from '@components/ui/header-image';
+import { Button } from '@components/ui/button';
+import { NextImage } from '@components/ui/next-image';
 
 export default function Bookmarks(): JSX.Element {
   const { back } = useRouter();
@@ -31,16 +32,19 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
       <ExploreNav />
-    <HeaderImage
-          imgClassName='arplicon'
-          blurClassName='none'
-          src='./assets/orange.jpg'
-          alt='For You Banner'
-          layout='fill'
-          width='auto'
-          height='auto'
-          useSkeleton
-       />
+        <Button
+          className='accent-tab relative h-full w-full rounded-none p-0 transition hover:brightness-75'
+          
+        >
+          <NextImage
+            useSkeleton
+            layout='fill'
+            imgClassName='object-cover'
+            src='./assets/orange.jpg'
+            alt=''
+            key=''
+          />
+        </Button>
       <AsideTrends inTrendsPage />
     </MainContainer>
   );
