@@ -53,9 +53,7 @@ export function AsideTrends({ inTrendsPage }: AsideTrendsProps): JSX.Element {
           className={cn('inner:px-4 inner:py-3', inTrendsPage && 'mt-0.5')}
           {...variants}
         >
-          {!inTrendsPage && (
-          
-          )}
+
           {trends.map(({ name, query, tweet_volume, url }) => (
             <Link href={url} key={query}>
               <a
