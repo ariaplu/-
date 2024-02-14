@@ -129,11 +129,17 @@ export function Sidebar(): JSX.Element {
                        outline-none transition hover:brightness-90 active:brightness-75 xs:static xs:translate-y-0
                        xs:hover:bg-main-accent/90 xs:active:bg-main-accent/75 xl:w-11/12'
             onClick={openModal}
-          >
-            <CustomIcon
-              className='block h-6 w-6 xl:hidden'
-              iconName='FeatherIcon'
-            />
+          > 
+        <ArplImage  className='block h-6 w-6 xl:hidden'
+          imgClassName='arplicon'
+          blurClassName='none'
+          src='/assets/ariaplus.svg'
+          alt='Twitter banner'
+          layout='fill'
+          width='40px'
+          height='40px'
+          useSkeleton
+       />    
             <p className='hidden xl:block'>&</p>
           </Button>
         </section>
