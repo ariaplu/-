@@ -41,7 +41,7 @@ export function AsideRightTrends({ inTrendsPage }: AsideTrendsProps): JSX.Elemen
             useSkeleton
             layout='fill'
             imgClassName='object-cover'
-            src='/assets/orange.jpg'
+            src='/assets/blue.jpg'
             alt=''
             key=''
           />
