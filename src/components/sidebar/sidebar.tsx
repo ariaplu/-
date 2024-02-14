@@ -130,7 +130,7 @@ export function Sidebar(): JSX.Element {
                        xs:hover:bg-main-accent/90 xs:active:bg-main-accent/75 xl:w-11/12'
             onClick={openModal}
           > 
-        <ArplImage  className='accent-tab place-self-center self-center justify-self-center justify-center object-center items-center h-6 w-6 '
+        <ArplImage  className='flex place-self-center self-center justify-self-center justify-center object-center items-center h-10 w-10 '
           imgClassName='arplicon'
           blurClassName='none'
           src='/assets/ariaplus.svg'
