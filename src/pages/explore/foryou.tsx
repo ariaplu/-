@@ -31,14 +31,14 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
       <ExploreNav />
-    <ArplImage
+    <HeaderImage
           imgClassName='arplicon'
           blurClassName='none'
-          src='/assets/ariaplus.svg'
+          src='https://prettylittlecode.github.io/w/i/feed/post/images/cover.jpg'
           alt='For You Banner'
           layout='fill'
-          width='100px'
-          height='100px'
+          width='100%'
+          height='100%'
           useSkeleton
        />
       <AsideTrends inTrendsPage />
