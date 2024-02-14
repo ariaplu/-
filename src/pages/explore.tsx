@@ -41,14 +41,7 @@ export default function Home(): JSX.Element {
       {!isMobile && <Input />}
 
       <section className='mt-0.5 xs:mt-0'>
-        {loading ? (
-          <Loading className='mt-5' />
-        ) : !data ? (
-          <Error message='Something went wrong' />
-        ) : (
-          <>
-            <AnimatePresence mode='popLayout'>
-             <NextImage className='accent-tab relative mt-0.5 h-36 xs:h-48 sm:h-52 h-full w-full rounded-none p-0 transition hover:brightness-75'
+          <NextImage className='accent-tab relative mt-0.5 h-36 xs:h-48 sm:h-52 h-full w-full rounded-none p-0 transition hover:brightness-75'
             useSkeleton
             layout='fill'
             imgClassName='object-cover'
@@ -56,6 +49,14 @@ export default function Home(): JSX.Element {
             alt=''
             key=''
           />
+        {loading ? (
+          <Loading className='mt-5' />
+        ) : !data ? (
+          <Error message='Something went wrong' />
+        ) : (
+          <>
+            <AnimatePresence mode='popLayout'>
+
               {data.map((tweet) => (
                 <Tweet {...tweet} key={tweet.id} />
               ))}
