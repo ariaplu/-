@@ -26,7 +26,7 @@ import { HeroIcon } from '@components/ui/hero-icon';
 import { Loading } from '@components/ui/loading';
 import type { ReactElement, ReactNode } from 'react';
 
-export default function tv(): JSX.Element {
+export default function Bookmarks(): JSX.Element {
   const { user } = useAuth();
 
   const { open, openModal, closeModal } = useModal();
@@ -93,11 +93,28 @@ export default function tv(): JSX.Element {
           />
         </Button>
       </MainHeader>
+      <section className='mt-0.5'>
+        {bookmarksRefLoading || moviesLoading ? (
+          <Loading className='mt-5' />
+        ) : !bookmarksRef ? (
+          <StatsEmpty
+            title="Save &'s for later"
+            description='Don’t let the good ones fly away! Bookmark them to easily find them again in the future.'
+            imageData={{ src: '/assets/no-bookmarks.png', alt: 'No bookmarks' }}
+          />
+        ) : (
+          <AnimatePresence mode='popLayout'>
+            {moviesData?.map((movies) => (
+              <Movie {...movies} key={movies.id} />
+            ))}
+          </AnimatePresence>
+        )}
+      </section>
     </MainContainer>
   );
 }
 
-tv.getLayout = (page: ReactElement): ReactNode => (
+Bookmarks.getLayout = (page: ReactElement): ReactNode => (
   <ProtectedLayout>
     <MainLayout>
       <HomeLayout>{page}</HomeLayout>
