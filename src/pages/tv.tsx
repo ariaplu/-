@@ -93,28 +93,11 @@ export default function Bookmarks(): JSX.Element {
           />
         </Button>
       </MainHeader>
-      <section className='mt-0.5'>
-        {bookmarksRefLoading || moviesLoading ? (
-          <Loading className='mt-5' />
-        ) : !bookmarksRef ? (
-          <StatsEmpty
-            title="Save &'s for later"
-            description='Don’t let the good ones fly away! Bookmark them to easily find them again in the future.'
-            imageData={{ src: '/assets/no-bookmarks.png', alt: 'No bookmarks' }}
-          />
-        ) : (
-          <AnimatePresence mode='popLayout'>
-            {moviesData?.map((movies) => (
-              <Movie {...movies} key={movies.id} />
-            ))}
-          </AnimatePresence>
-        )}
-      </section>
     </MainContainer>
   );
 }
 
-Bookmarks.getLayout = (page: ReactElement): ReactNode => (
+tv.getLayout = (page: ReactElement): ReactNode => (
   <ProtectedLayout>
     <MainLayout>
       <HomeLayout>{page}</HomeLayout>
