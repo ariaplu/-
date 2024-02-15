@@ -97,7 +97,7 @@ export default function Bookmarks(): JSX.Element {
   );
 }
 
-tv.getLayout = (page: ReactElement): ReactNode => (
+Home.getLayout = (page: ReactElement): ReactNode => (
   <ProtectedLayout>
     <MainLayout>
       <HomeLayout>{page}</HomeLayout>
