@@ -26,7 +26,7 @@ import { HeroIcon } from '@components/ui/hero-icon';
 import { Loading } from '@components/ui/loading';
 import type { ReactElement, ReactNode } from 'react';
 
-export default function Bookmarks(): JSX.Element {
+export default function tv(): JSX.Element {
   const { user } = useAuth();
 
   const { open, openModal, closeModal } = useModal();
@@ -97,7 +97,7 @@ export default function Bookmarks(): JSX.Element {
   );
 }
 
-Home.getLayout = (page: ReactElement): ReactNode => (
+tv.getLayout = (page: ReactElement): ReactNode => (
   <ProtectedLayout>
     <MainLayout>
       <HomeLayout>{page}</HomeLayout>
