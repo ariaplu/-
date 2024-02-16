@@ -24,7 +24,7 @@ export function Movie() {
               useSkeleton
               src={image.src}
               layout='fill'
-              objectFit='contain'
+              objectFit='cover'
               alt={`Grid Image ${index + 1}`}
             />
           </a>
