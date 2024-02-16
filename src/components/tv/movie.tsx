@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { NextImage } from '@components/ui/next-image';
 
 interface ImageProps {
   src: string;
@@ -19,7 +20,7 @@ export function Movie() {
       {images.map((image, index) => (
         <Link key={index} href={image.href}>
           <a className='relative h-40 overflow-hidden transition rounded-lg'>
-            <Image
+            <NextImage
               src={image.src}
               layout='fill'
               objectFit='cover'
