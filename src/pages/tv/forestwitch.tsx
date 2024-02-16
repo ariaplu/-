@@ -38,7 +38,7 @@ export default function Bookmarks(): JSX.Element {
         alt='Ted Lasso'
         width={300}
         height={300}
-        className='rounded-full'
+        className='rounded-lg'
       />
       <h1 className='text-3xl font-bold mt-8 text-center'>Ted Lasso</h1>
       <p className='text-gray-600 mt-4 text-center'> A comedy series about an American football coach hired to manage a British soccer team. </p>
