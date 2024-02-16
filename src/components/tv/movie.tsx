@@ -6,11 +6,11 @@ interface ImageProps {
   href: string;
 }
 
-interface MovieProps {}
+interface MovieProps 
 
 export function Movie(props: MovieProps) {
   const images: ImageProps[] = [
-    { src: '/assets/ariaplus.svg', href: '/link1' },
+    { src: '/assets/ariaplus.svg', href: '/link1' }
     // Add more images as needed
   ];
 
