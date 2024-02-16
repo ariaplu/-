@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const mComponent = () => {
+const Movie = () => {
   const images = [
     { src: '/assets/ariaplus.svg', href: '/link1' },
     // Add more images as needed
@@ -25,4 +25,4 @@ const mComponent = () => {
   );
 };
 
-export default mComponent;
+export default Movie;
