@@ -37,6 +37,15 @@ export default function Bookmarks(): JSX.Element {
             alt=''
             key=''
           />
+       <NextImage className='accent-tab relative mt-0.5 h-36 xs:h-48 sm:h-52 h-full w-full rounded-none p-0 transition hover:brightness-75'
+            useSkeleton
+            layout='fill'
+            imgClassName='object-cover'
+            src='/assets/orange.jpg'
+            alt=''
+            key=''
+          />
+     <p className='text-xs text-light-secondary dark:text-dark-secondary'>Comedy | August 2020 | 1hr 30min | Aria+</p>
     </MainContainer>
   );
 }
