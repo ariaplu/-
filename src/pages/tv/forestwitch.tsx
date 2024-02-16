@@ -13,6 +13,7 @@ import { ToolTip } from '@components/ui/tooltip';
 import { HeroIcon } from '@components/ui/hero-icon';
 import type { ReactElement, ReactNode } from 'react';
 import { NextImage } from '@components/ui/next-image';
+import Image from 'next/image';
 
 export default function Bookmarks(): JSX.Element {
   const { back } = useRouter();
@@ -30,20 +31,18 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
 
-       <NextImage className='relative mt-0.5 pl-52 h-24 sm:h-20 w-10 rounded-none p-0 transition hover:brightness-75'
-            layout='fill'
-            imgClassName='object-contain'
-            src='/assets/tv/movie/data/forestwitch/edr.png'
-            alt=''
-            key=''
-          />
-       <div className='p-4'>
-        <p className='mb-4 text-gray-600'>This is a test des</p>
-        <p className='mb-4 text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet tortor eget ligula lobortis aliquet. Pellentesque vulputate purus odio, a bibendum mauris ultrices non. Suspendisse interdum maximus elit, a viverra quam vulputate id. Phasellus ut sollicitudin nibh. Suspendisse et molestie turpis. Nulla facilisi. Curabitur sit amet sagittis nunc. Suspendisse quis pretium nunc, eu sollicitudin purus. Mauris fringilla arcu ligula, quis bibendum justo iaculis a. Ut congue faucibus odio at convallis. Mauris metus diam, rhoncus ac erat in, pharetra rhoncus ipsum. Mauris ut nibh at nisi accumsan posuere congue laoreet ipsum. Nullam volutpat metus nec semper eleifend. Cras facilisis risus vel hendrerit tristique. Pellentesque euismod pharetra interdum. </p>
-         
-        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>PLay</button>
+         <div className='flex flex-col items-center p-8'>
 
-      </div>
+      <Image
+        src='/assets/tv/movie/data/forestwitch/edr.png' // Update this with the path to your image
+        alt='Ted Lasso'
+        width={300}
+        height={300}
+        className='rounded-full'
+      />
+      <h1 className='text-3xl font-bold mt-8 text-center'>Ted Lasso</h1>
+      <p className='text-gray-600 mt-4 text-center'> A comedy series about an American football coach hired to manage a British soccer team. </p>
+    </div>
     </MainContainer>
   );
 }
