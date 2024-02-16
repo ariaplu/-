@@ -19,7 +19,7 @@ export function Movie() {
     <div className='grid grid-cols-3 gap-4'>
       {images.map((image, index) => (
         <Link key={index} href={image.href}>
-          <a className='relative h-40 overflow-hidden transition rounded-lg'>
+          <a className='relative h-40 overflow-hidden hover-animation transition rounded-lg'>
             <NextImage
               src={image.src}
               layout='fill'
