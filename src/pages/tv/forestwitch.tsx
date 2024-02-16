@@ -39,7 +39,8 @@ export default function Bookmarks(): JSX.Element {
           />
        <div className='p-4'>
         <p className='mb-4 text-gray-600'>This is a test des</p>
-
+        <p className='mb-4 text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet tortor eget ligula lobortis aliquet. Pellentesque vulputate purus odio, a bibendum mauris ultrices non. Suspendisse interdum maximus elit, a viverra quam vulputate id. Phasellus ut sollicitudin nibh. Suspendisse et molestie turpis. Nulla facilisi. Curabitur sit amet sagittis nunc. Suspendisse quis pretium nunc, eu sollicitudin purus. Mauris fringilla arcu ligula, quis bibendum justo iaculis a. Ut congue faucibus odio at convallis. Mauris metus diam, rhoncus ac erat in, pharetra rhoncus ipsum. Mauris ut nibh at nisi accumsan posuere congue laoreet ipsum. Nullam volutpat metus nec semper eleifend. Cras facilisis risus vel hendrerit tristique. Pellentesque euismod pharetra interdum. </p>
+         
         <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>PLay</button>
 
       </div>
