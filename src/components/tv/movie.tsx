@@ -13,9 +13,9 @@ const mComponent = () => {
         <Link key={index} href={image.href}>
           <a className='relative h-40 overflow-hidden rounded-lg'>
             <Image
-              src='/assets/ariaplus.svg'
+              src={image.src}
               layout='fill'
-              objectFit="cover'
+              objectFit='cover'
               alt={`Grid Image ${index + 1}`}
             />
           </a>
