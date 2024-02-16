@@ -60,7 +60,7 @@ export default function Bookmarks(): JSX.Element {
       <SEO title='tv | Aria+' />
       <Modal
         modalClassName='max-w-xs bg-main-background w-full p-8 rounded-2xl'
-        open={open1}
+        open={open}
         closeModal={closeModal}
       >
         <ActionModal
@@ -84,7 +84,7 @@ export default function Bookmarks(): JSX.Element {
           className='dark-bg-tab group relative p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 
                      dark:active:bg-dark-primary/20'
-          onClick={open1Modal}
+          onClick={openModal}
         >
           <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
           <ToolTip
