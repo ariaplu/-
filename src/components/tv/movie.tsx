@@ -21,6 +21,7 @@ export function Movie() {
         <Link key={index} href={image.href}>
           <a className='relative h-40 overflow-hidden hover-animation transition rounded-lg'>
             <NextImage
+              useSkeleton
               src={image.src}
               layout='fill'
               objectFit='cover'
