@@ -64,11 +64,11 @@ export default function Bookmarks(): JSX.Element {
         closeModal={closeModal}
       >
         <ActionModal
-          title='Clear all your downloads?'
-          description='This can’t be undone and you’ll remove all your downloaded movies and favourite shows that you’ve downloaded.'
-          mainBtnClassName='bg-accent-red hover:bg-accent-red/90 active:bg-accent-red/75 accent-tab 
-                            focus-visible:bg-accent-red/90'
-          mainBtnLabel='Clear'
+          title='Aria+ tv Pass'
+          description='Start streaming now'
+          mainBtnClassName='bg-accent-blue hover:bg-accent-green/90 active:bg-accent-blue/75 accent-tab 
+                            focus-visible:bg-accent-blue/90'
+          mainBtnLabel='Start'
           action={handleClear}
           closeModal={closeModal}
         />
@@ -80,18 +80,6 @@ export default function Bookmarks(): JSX.Element {
             @{user?.username}
           </p>
         </div>
-        <Button
-          className='dark-bg-tab group relative p-2 hover:bg-light-primary/10
-                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 
-                     dark:active:bg-dark-primary/20'
-          onClick={openModal}
-        >
-          <HeroIcon className='h-5 w-5' iconName='ArchiveBoxXMarkIcon' />
-          <ToolTip
-            className='!-translate-x-20 translate-y-3 md:-translate-x-1/2'
-            tip='Clear bookmarks'
-          />
-        </Button>
                 <Button
           className='dark-bg-tab group relative p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 
@@ -101,7 +89,7 @@ export default function Bookmarks(): JSX.Element {
           <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
           <ToolTip
             className='!-translate-x-20 translate-y-3 md:-translate-x-1/2'
-            tip='Clear bookmarks'
+            tip='Aria+ tv Pass'
           />
         </Button>
       </MainHeader>
