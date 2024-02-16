@@ -92,6 +92,18 @@ export default function Bookmarks(): JSX.Element {
             tip='Clear bookmarks'
           />
         </Button>
+                <Button
+          className='dark-bg-tab group relative p-2 hover:bg-light-primary/10
+                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 
+                     dark:active:bg-dark-primary/20'
+          onClick={openModal}
+        >
+          <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
+          <ToolTip
+            className='!-translate-x-20 translate-y-3 md:-translate-x-1/2'
+            tip='Clear bookmarks'
+          />
+        </Button>
       </MainHeader>
       <section className='mt-0.5'>
         {bookmarksRefLoading || moviesLoading ? (
