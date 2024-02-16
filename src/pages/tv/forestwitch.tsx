@@ -42,20 +42,13 @@ export default function Bookmarks(): JSX.Element {
         className='rounded-lg'
       />
       <h1 className='text-3xl font-bold mt-8 text-center'>Forest Witch</h1>
-     <Button
-          className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
-                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'
-        >
-          <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
-          <ToolTip tip='Settings' />
-        </Button>
-       <Button
-          className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
-                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'
-        >
-          <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
-          <ToolTip tip='Settings' />
-        </Button>
+      <Image
+        src='/assets/ariaplus.svg' // Update this with the path to your image
+        alt='Ted Lasso'
+        width={20}
+        height={20}
+        className='rounded-lg'
+      />
       <p className='text-gray-600 mt-4 text-center'>Comdey | 2024 | 1hr 40min | 4K</p>
       <Button
     className='bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 w-96 rounded-lg'>Play</Button>
