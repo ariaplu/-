@@ -1,8 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Movie = () => {
-  const images = [
+interface ImageProps {
+  src: string;
+  href: string;
+}
+
+interface MovieProps {}
+
+export function Movie(props: MovieProps) {
+  const images: ImageProps[] = [
     { src: '/assets/ariaplus.svg', href: '/link1' },
     // Add more images as needed
   ];
@@ -23,6 +30,4 @@ const Movie = () => {
       ))}
     </div>
   );
-};
-
-export default Movie;
+}
