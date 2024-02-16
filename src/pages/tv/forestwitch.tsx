@@ -37,7 +37,7 @@ export default function Bookmarks(): JSX.Element {
             alt=''
             key=''
           />
-   <NextImage className='accent-tab relative -mt-10 h-36 xs:h-48 sm:h-52 h-full w-16 rounded-none p-0 transition hover:brightness-75'
+   <NextImage className='accent-tab relative -mt-10 pr-5 h-36 xs:h-36 sm:h-36 h-full w-36 rounded-none p-0 transition hover:brightness-75'
             useSkeleton
             layout='fill'
             imgClassName='object-cover'
