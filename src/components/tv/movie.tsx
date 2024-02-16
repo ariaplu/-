@@ -11,7 +11,12 @@ export function Movie() {
   const images: ImageProps[] = [
    { src: '/assets/tv/movie/m.jpg', href: '/link1' },
    { src: '/assets/tv/movie/n.jpg', href: '/link1' },
-   { src: '/assets/tv/movie/twtc.jpg', href: '/link1' }
+   { src: '/assets/tv/movie/twtc.jpg', href: '/link1' },
+   { src: '/assets/tv/movie/gits.jpg', href: '/link1' },
+   { src: '/assets/tv/movie/bw.jpg', href: '/link1' },
+   { src: '/assets/tv/movie/mu.jpg', href: '/link1' }
+  
+    
     // Add more images as needed
   ];
 
