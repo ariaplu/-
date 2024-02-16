@@ -30,7 +30,7 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
 
-       <NextImage className='relative -mt-40 pl-52 h-24 sm:h-20 w-10 rounded-none p-0 transition hover:brightness-75'
+       <NextImage className='relative mt-0.5 pl-52 h-24 sm:h-20 w-10 rounded-none p-0 transition hover:brightness-75'
             layout='fill'
             imgClassName='object-contain'
             src='/assets/tv/movie/data/forestwitch/edr.png'
