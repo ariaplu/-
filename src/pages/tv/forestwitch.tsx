@@ -41,7 +41,7 @@ export default function Bookmarks(): JSX.Element {
             useSkeleton
             layout='fill'
             imgClassName='object-cover'
-            src='/assets/ariaplus.svg'
+            src='/assets/tv/movie/data/forestwitch/disneyplus.png'
             alt=''
             key=''
           />
