@@ -20,13 +20,13 @@ export default function Bookmarks(): JSX.Element {
 
   return (
     <MainContainer>
-      <SEO title='Trends | Aria+' />
-      <MainHeader useActionButton title='Trends' action={back}>
+      <SEO title='Forest Witch | Aria+' />
+      <MainHeader useActionButton title='Forest Witch' action={back}>
         <Button
           className='dark-bg-tab group relative ml-auto cursor-not-allowed p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'
         >
-          <HeroIcon className='h-5 w-5' iconName='Cog8ToothIcon' />
+          <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
           <ToolTip tip='Settings' />
         </Button>
       </MainHeader>
@@ -40,7 +40,7 @@ export default function Bookmarks(): JSX.Element {
         height={300}
         className='rounded-lg'
       />
-      <h1 className='text-3xl font-bold mt-8 text-center'>Ted Lasso</h1>
+      <h1 className='text-3xl font-bold mt-8 text-center'>Forest Witch</h1>
       <p className='text-gray-600 mt-4 text-center'> A comedy series about an American football coach hired to manage a British soccer team. </p>
     </div>
     </MainContainer>
