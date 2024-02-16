@@ -37,8 +37,7 @@ export default function Bookmarks(): JSX.Element {
             alt=''
             key=''
           />
-   <NextImage className='accent-tab relative -mt-40 pl-52 h-24 xs:h-10 sm:h-10 h-10 w-10 rounded-none p-0 transition hover:brightness-75'
-            useSkeleton
+   <NextImage className='accent-tab relative -mt-40 pl-52 h-24 xs:h-10 sm:h-10 w-10 rounded-none p-0 transition hover:brightness-75'
             layout='fill'
             imgClassName='object-contain'
             src='/assets/tv/movie/data/forestwitch/disneyplus.png'
