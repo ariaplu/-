@@ -1,102 +1,42 @@
-import { useRef } from 'react';
 import { useRouter } from 'next/router';
-import { AnimatePresence } from 'framer-motion';
-import { doc, query, where, orderBy } from 'firebase/firestore';
-import { tweetsCollection } from '@lib/firebase/collections';
-import { useCollection } from '@lib/hooks/useCollection';
-import { useDocument } from '@lib/hooks/useDocument';
-import { isPlural } from '@lib/utils';
-import { HomeLayout, ProtectedLayout } from '@components/layout/common-layout';
+import {
+  TrendsLayout,
+  ProtectedLayout
+} from '@components/layout/common-layout';
 import { MainLayout } from '@components/layout/main-layout';
-import { MainContainer } from '@components/home/main-container';
-import { MainHeader } from '@components/home/main-header';
-import { Tweet } from '@components/tweet/tweet';
-import { ViewTweet } from '@components/view/view-tweet';
 import { SEO } from '@components/common/seo';
-import { Loading } from '@components/ui/loading';
-import { Error } from '@components/ui/error';
-import { ViewParentTweet } from '@components/view/view-parent-tweet';
+import { MainHeader } from '@components/home/main-header';
+import { MainContainer } from '@components/home/main-container';
+import { AsideTrends } from '@components/aside/aside-trends';
+import { Button } from '@components/ui/button';
+import { ToolTip } from '@components/ui/tooltip';
+import { HeroIcon } from '@components/ui/hero-icon';
 import type { ReactElement, ReactNode } from 'react';
 
-export default function TweetId(): JSX.Element {
-  const {
-    query: { id },
-    back
-  } = useRouter();
-
-  const { data: tweetData, loading: tweetLoading } = useDocument(
-    doc(tweetsCollection, id as string),
-    { includeUser: true, allowNull: true }
-  );
-
-  const viewTweetRef = useRef<HTMLElement>(null);
-
-  const { data: repliesData, loading: repliesLoading } = useCollection(
-    query(
-      tweetsCollection,
-      where('parent.id', '==', id),
-      orderBy('createdAt', 'desc')
-    ),
-    { includeUser: true, allowNull: true }
-  );
-
-  const { text, images } = tweetData ?? {};
-
-  const imagesLength = images?.length ?? 0;
-  const parentId = tweetData?.parent?.id;
-
-  const pageTitle = tweetData
-    ? `${tweetData.user.name} on Aria+: "${text ?? ''}${
-        images ? ` (${imagesLength} image${isPlural(imagesLength)})` : ''
-      }" | Aria+`
-    : null;
+export default function Bookmarks(): JSX.Element {
+  const { back } = useRouter();
 
   return (
-    <MainContainer className='!pb-[1280px]'>
-      <MainHeader
-        useActionButton
-        title={parentId ? 'Thread' : '&'}
-        action={back}
-      />
-      <section>
-        {tweetLoading ? (
-          <Loading className='mt-5' />
-        ) : !tweetData ? (
-          <>
-            <SEO title='& not found | Aria+' />
-            <Error message='& not found' />
-          </>
-        ) : (
-          <>
-            {pageTitle && <SEO title={pageTitle} />}
-            {parentId && (
-              <ViewParentTweet
-                parentId={parentId}
-                viewTweetRef={viewTweetRef}
-              />
-            )}
-            <ViewTweet viewTweetRef={viewTweetRef} {...tweetData} />
-            {tweetData &&
-              (repliesLoading ? (
-                <Loading className='mt-5' />
-              ) : (
-                <AnimatePresence mode='popLayout'>
-                  {repliesData?.map((tweet) => (
-                    <Tweet {...tweet} key={tweet.id} />
-                  ))}
-                </AnimatePresence>
-              ))}
-          </>
-        )}
-      </section>
+    <MainContainer>
+      <SEO title='Trends | Aria+' />
+      <MainHeader useActionButton title='Trends' action={back}>
+        <Button
+          className='dark-bg-tab group relative ml-auto cursor-not-allowed p-2 hover:bg-light-primary/10
+                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'
+        >
+          <HeroIcon className='h-5 w-5' iconName='Cog8ToothIcon' />
+          <ToolTip tip='Settings' />
+        </Button>
+      </MainHeader>
+      <AsideTrends inTrendsPage />
     </MainContainer>
   );
 }
 
-TweetId.getLayout = (page: ReactElement): ReactNode => (
+Bookmarks.getLayout = (page: ReactElement): ReactNode => (
   <ProtectedLayout>
     <MainLayout>
-      <HomeLayout>{page}</HomeLayout>
+      <TrendsLayout>{page}</TrendsLayout>
     </MainLayout>
   </ProtectedLayout>
 );
