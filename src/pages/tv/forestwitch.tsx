@@ -14,6 +14,7 @@ import { HeroIcon } from '@components/ui/hero-icon';
 import type { ReactElement, ReactNode } from 'react';
 import { NextImage } from '@components/ui/next-image';
 import Image from 'next/image';
+import { Movie } from '@components/tv/movie';
 
 export default function Bookmarks(): JSX.Element {
   const { back } = useRouter();
@@ -48,6 +49,7 @@ export default function Bookmarks(): JSX.Element {
                        xs:hover:bg-main-accent/90 xs:active:bg-main-accent/75 xl:w-11/12'>Play</Button>
       <p className='text-gray-600 mt-4 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus mollis ex a sodales. Quisque molestie massa quis dolor elementum rhoncus. Nullam scelerisque elementum elit, nec vestibulum augue luctus id. Aliquam et dolor non neque pulvinar sodales a nec mi. Morbi varius a erat in fermentum. Donec sed scelerisque purus. Integer sed libero sit amet erat aliquet facilisis in quis augue. Sed sollicitudin egestas fermentum. Integer sit amet tincidunt velit. Maecenas tincidunt justo at erat luctus feugiat. Pellentesque eget diam vitae elit ultrices ullamcorper. Aliquam tincidunt quam elit, ut interdum nisi maximus in. Donec eget enim feugiat, rutrum turpis sit amet, egestas tortor. Aenean lobortis finibus hendrerit. </p>
     </div>
+   <Movie/>
     </MainContainer>
   );
 }
