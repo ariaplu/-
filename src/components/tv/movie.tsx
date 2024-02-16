@@ -19,12 +19,12 @@ export function Movie() {
     <div className='grid grid-cols-3 gap-4 px-3'>
       {images.map((image, index) => (
         <Link key={index} href={image.href}>
-          <a className='relative h-64 overflow-hidden hover-animation transition rounded-lg'>
+          <a className='relative h-64 max-h-64 overflow-hidden hover-animation transition rounded-lg'>
             <NextImage
               useSkeleton
               src={image.src}
               layout='fill'
-              objectFit='cover'
+              objectFit='contain'
               alt={`Grid Image ${index + 1}`}
             />
           </a>
