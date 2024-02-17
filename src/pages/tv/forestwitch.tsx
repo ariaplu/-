@@ -33,8 +33,8 @@ export default function Bookmarks(): JSX.Element {
       </MainHeader>
          <div className='flex flex-col items-center'>
                <Image
-        src='/assets/tv/movie/data/forestwitch/jl.png' // Update this with the path to your image
-        alt='Ted Lasso'
+        src='/assets/tv/movie/data/forestwitch/jl.jpeg' // Update this with the path to your image
+        alt='Forest Witch Cover'
         width={600}
         height={300}
         className='rounded-none'
