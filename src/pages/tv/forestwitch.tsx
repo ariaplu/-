@@ -37,7 +37,7 @@ export default function Bookmarks(): JSX.Element {
       <Image
         src='/assets/tv/movie/data/forestwitch/edr.png' // Update this with the path to your image
         alt='Ted Lasso'
-        width={300}
+        width={600}
         height={300}
         className='rounded-lg'
       />
