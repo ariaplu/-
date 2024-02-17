@@ -33,7 +33,7 @@ export default function Bookmarks(): JSX.Element {
       </MainHeader>
          <div className='flex flex-col items-center'>
                <Image
-        src='/assets/tv/movie/data/forestwitch/jl.jpeg' // Update this with the path to your image
+        src='/assets/tv/movie/data/forestwitch/jl.jpg' // Update this with the path to your image
         alt='Forest Witch Cover'
         width={600}
         height={300}
