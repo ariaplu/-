@@ -42,7 +42,7 @@ export default function Bookmarks(): JSX.Element {
         className='rounded-lg'
       />
       <h1 className='text-3xl font-bold mt-8 text-center'>Forest Witch</h1>
-      <div className='flex'
+      <div className='flex'>
            <Image
         src='/assets/ariaplus.svg' // Update this with the path to your image
         alt='4K'
