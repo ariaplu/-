@@ -43,13 +43,16 @@ export default function Bookmarks(): JSX.Element {
       />
       <h1 className='text-3xl font-bold mt-8 text-center'>Forest Witch</h1>
       <div className='flex'>
-           <Image
+       <Button className='dark-bg-tab group relative ml-auto cursor-not-allowed p-2 hover:bg-light-primary/10
+                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
+             <Image
         src='/assets/ariaplus.svg' // Update this with the path to your image
         alt='4K'
         width={20}
         height={20}
         className='rounded-lg'
-      />
+               />
+      </Button>
          <Image
         src='/assets/ariaplus.svg' // Update this with the path to your image
         alt='4K'
