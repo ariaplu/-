@@ -37,9 +37,9 @@ export default function Bookmarks(): JSX.Element {
       <Image
         src='/assets/tv/movie/data/forestwitch/edr.png' // Update this with the path to your image
         alt='Ted Lasso'
-        width={600}
+        width={650}
         height={300}
-        className='rounded-lg'
+        className='rounded-none'
       />
       <h1 className='text-3xl font-bold mt-8 text-center'>Forest Witch</h1>
       <div className='flex'>
