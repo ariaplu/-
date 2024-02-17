@@ -44,7 +44,7 @@ export default function Bookmarks(): JSX.Element {
       <h1 className='text-3xl font-bold mt-8 text-center'>Forest Witch</h1>
       <Image
         src='/assets/ariaplus.svg' // Update this with the path to your image
-        alt='Ted Lasso'
+        alt='4K'
         width={20}
         height={20}
         className='rounded-lg'
