@@ -31,16 +31,17 @@ export default function Bookmarks(): JSX.Element {
           <ToolTip tip='Settings' />
         </Button>
       </MainHeader>
-
-         <div className='flex flex-col items-center p-8'>
-
-      <Image
+         <div className='flex flex-col items-center'>
+               <Image
         src='/assets/tv/movie/data/forestwitch/edr.png' // Update this with the path to your image
         alt='Ted Lasso'
-        width={650}
+        width={600}
         height={300}
         className='rounded-none'
       />
+         </div>
+         <div className='flex flex-col items-center p-8'>
+
       <h1 className='text-3xl font-bold mt-8 text-center'>Forest Witch</h1>
       <div className='flex'>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
