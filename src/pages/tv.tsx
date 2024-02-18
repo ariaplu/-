@@ -59,7 +59,7 @@ export default function Bookmarks(): JSX.Element {
     <MainContainer>
       <SEO title='tv | Aria+' />
       <Modal
-        modalClassName='max-w-xs bg-main-background w-full p-8 rounded-2xl'
+        modalClassName='max-w-xs items-center bg-main-background w-full p-8 rounded-2xl'
         open={open}
         closeModal={closeModal}
       >
