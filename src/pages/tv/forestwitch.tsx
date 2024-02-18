@@ -17,8 +17,7 @@ import Image from 'next/image';
 import { Movie } from '@components/tv/movie';
 import { MovieCard } from '@components/tv/movie-card';
 
-export default function Bookmarks(): JSX.Element {
-  const { back } = useRouter();
+const { back } = useRouter();
   
 const HomePage = (): ReactElement => {
 
