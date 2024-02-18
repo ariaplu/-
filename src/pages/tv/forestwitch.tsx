@@ -45,7 +45,7 @@ export default function Bookmarks(): JSX.Element {
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
              <Image
-        src='/assets/ariaplus.svg' // Update this with the path to your image
+        src='/assets/tv/ui/wide.png' // Update this with the path to your image
         alt='4K'
         width={20}
         height={20}
