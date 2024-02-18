@@ -37,7 +37,7 @@ export default function Bookmarks(): JSX.Element {
        <NextImage
         src='/assets/tv/movie/data/nowhere/nowhere.png' // Update this with the path to your image
         alt='Nowhere'
-        width={300}
+        width={600}
         height={125}
         className=' mt-60 object-contain p-10 rounded-lg'
                />
