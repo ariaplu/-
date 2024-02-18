@@ -40,7 +40,7 @@ export default function Bookmarks(): JSX.Element {
         className='rounded-none'
       />
          </div>
-         <div className='flex flex-col -mt-12 items-center p-8'>
+         <div className='flex flex-col -mt-16 items-center p-8'>
 
       <h1 className='text-3xl font-bold mt-2 text-center'>Forest Witch</h1>
       <div className='flex'>
