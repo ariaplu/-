@@ -37,9 +37,9 @@ export default function Bookmarks(): JSX.Element {
        <NextImage
         src='/assets/tv/movie/data/nowhere/nowhere.png' // Update this with the path to your image
         alt='Nowhere'
-        width={250}
+        width={300}
         height={125}
-        className=' mt-60 object-contain rounded-lg'
+        className=' mt-60 object-contain p-10 rounded-lg'
                />
       <div className='flex'>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
