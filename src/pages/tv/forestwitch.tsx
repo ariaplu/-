@@ -47,7 +47,7 @@ export default function Bookmarks(): JSX.Element {
              <Image
         src='/assets/tv/ui/wide.png' // Update this with the path to your image
         alt='4K'
-        width={20}
+        width={50}
         height={20}
         className='rounded-lg'
                />
