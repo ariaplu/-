@@ -1,6 +1,6 @@
 // components/ForestWitch.tsx
 
-import { ReactElement } from 'react'
+import { ReactElement } from 'react';
 
 interface MovieCardProps {
   title: string
@@ -15,7 +15,7 @@ const MovieCard = ({
   description,
   director,
   ageRating,
-  caution,
+  caution
 }: MovieCardProps): ReactElement => {
   return (
     <div className='bg-white shadow-md rounded-md p-8'>
