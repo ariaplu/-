@@ -39,7 +39,7 @@ export default function Bookmarks(): JSX.Element {
         alt='Nowhere'
         width={600}
         height={140}
-        className=' mt-60 object-contain px-20 pb-2 rounded-lg'
+        className=' mt-60 object-contain px-6 pb-2 rounded-lg'
                />
       <div className='flex'>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
