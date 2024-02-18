@@ -32,7 +32,7 @@ export default function Bookmarks(): JSX.Element {
         </Button>
       </MainHeader>
       
-         <div className='flex flex-col -mt-16 items-center p-8 style={{ backgroundImage: `url(//assets/tv/movie/data/forestwitch/jl.jpg)'>
+         <div className='flex flex-col items-center p-8 style={{ backgroundImage: `url(/assets/tv/movie/data/forestwitch/jl.jpg)'>
 
       <h1 className='text-3xl font-bold mt-2 text-center'>Forest Witch</h1>
       <div className='flex'>
