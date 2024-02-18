@@ -15,10 +15,21 @@ import type { ReactElement, ReactNode } from 'react';
 import { NextImage } from '@components/ui/next-image';
 import Image from 'next/image';
 import { Movie } from '@components/tv/movie';
+import { MovieCard } from '@components/tv/movie-card';
 
 export default function Bookmarks(): JSX.Element {
   const { back } = useRouter();
+  
+const HomePage = (): ReactElement => {
 
+  const MovieCardData = {
+    title: 'Forest Witch',
+    description: 'An upcoming psychological horror thriller film directed by Radhesh Aria.',
+    director: 'Radhesh Aria',
+    ageRating: '16+',
+    caution: 'A Horror Thriller like no other. Viewer discretion is advised.',
+  }
+  
   return (
     <MainContainer>
       <SEO title='Forest Witch | Aria+' />
@@ -78,6 +89,7 @@ export default function Bookmarks(): JSX.Element {
     className='bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 w-96 rounded-lg'>Play</Button>
       <p className='text-gray-600 mt-4 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus mollis ex a sodales. Quisque molestie massa quis dolor elementum rhoncus. Nullam scelerisque elementum elit, nec vestibulum augue luctus id. Aliquam et dolor non neque pulvinar sodales a nec mi. Morbi varius a erat in fermentum. Donec sed scelerisque purus. Integer sed libero sit amet erat aliquet facilisis in quis augue. Sed sollicitudin egestas fermentum. Integer sit amet tincidunt velit. Maecenas tincidunt justo at erat luctus feugiat. Pellentesque eget diam vitae elit ultrices ullamcorper. Aliquam tincidunt quam elit, ut interdum nisi maximus in. Donec eget enim feugiat, rutrum turpis sit amet, egestas tortor. Aenean lobortis finibus hendrerit. </p>
     </div>
+      <MovieCard {...MovieCardData} />
    <Movie/>
     </MainContainer>
   );
