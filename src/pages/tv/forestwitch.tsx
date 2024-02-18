@@ -35,11 +35,10 @@ export default function Bookmarks(): JSX.Element {
     <div className='flex flex-col items-center p-8 bg-no-repeat bg-top bg-contain' style={{ backgroundImage: 'url(/assets/tv/movie/data/forestwitch/jl.jpg)' }}>
 
        <NextImage
-        useSkeleton
         src='/assets/tv/movie/data/forestwitch/fw.png' // Update this with the path to your image
         alt='4K'
-        width={100}
-        height={100}
+        width={500}
+        height={250}
         className=' mt-60 rounded-lg'
                />
       <div className='flex'>
