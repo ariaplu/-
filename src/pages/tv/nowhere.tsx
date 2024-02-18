@@ -36,10 +36,10 @@ export default function Bookmarks(): JSX.Element {
 
        <NextImage
         src='/assets/tv/movie/data/nowhere/nowhere.png' // Update this with the path to your image
-        alt='4K'
+        alt='Nowhere'
         width={250}
         height={125}
-        className=' mt-60 rounded-lg'
+        className=' mt-60 object-contain rounded-lg'
                />
       <div className='flex'>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
