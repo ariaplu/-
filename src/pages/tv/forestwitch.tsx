@@ -34,7 +34,14 @@ export default function Bookmarks(): JSX.Element {
       
     <div className='flex flex-col items-center p-8 bg-no-repeat bg-top bg-contain' style={{ backgroundImage: 'url(/assets/tv/movie/data/forestwitch/jl.jpg)' }}>
 
-      <h1 className='text-3xl font-bold mt-60 text-center'>Forest Witch</h1>
+       <NextImage
+        useSkeleton
+        src='/assets/tv/movie/data/forestwitch/fw.png' // Update this with the path to your image
+        alt='4K'
+        width={100}
+        height={100}
+        className=' mt-60 rounded-lg'
+               />
       <div className='flex'>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
