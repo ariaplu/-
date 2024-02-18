@@ -17,7 +17,9 @@ import Image from 'next/image';
 import { Movie } from '@components/tv/movie';
 import { MovieCard } from '@components/tv/movie-card';
 
+
 const { back } = useRouter();
+
   
 const HomePage = (): ReactElement => {
 
@@ -92,12 +94,4 @@ const HomePage = (): ReactElement => {
    <Movie/>
     </MainContainer>
   );
-}
 
-Bookmarks.getLayout = (page: ReactElement): ReactNode => (
-  <ProtectedLayout>
-    <MainLayout>
-      <TrendsLayout>{page}</TrendsLayout>
-    </MainLayout>
-  </ProtectedLayout>
-);
