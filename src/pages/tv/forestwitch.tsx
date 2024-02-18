@@ -36,11 +36,11 @@ export default function Bookmarks(): JSX.Element {
         src='/assets/tv/movie/data/forestwitch/jl.jpg' // Update this with the path to your image
         alt='Forest Witch Cover'
         width={600}
-        height={300}
+        height={500}
         className='rounded-none'
       />
          </div>
-         <div className='flex flex-col items-center p-8'>
+         <div className='flex flex-col -mt-12 items-center p-8'>
 
       <h1 className='text-3xl font-bold mt-2 text-center'>Forest Witch</h1>
       <div className='flex'>
