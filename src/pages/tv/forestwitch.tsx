@@ -37,8 +37,8 @@ export default function Bookmarks(): JSX.Element {
        <NextImage
         src='/assets/tv/movie/data/forestwitch/fw.png' // Update this with the path to your image
         alt='4K'
-        width={500}
-        height={250}
+        width={250}
+        height={125}
         className=' mt-60 rounded-lg'
                />
       <div className='flex'>
