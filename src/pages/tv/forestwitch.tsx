@@ -94,4 +94,4 @@ const HomePage = (): ReactElement => {
    <Movie/>
     </MainContainer>
   );
-
+}
