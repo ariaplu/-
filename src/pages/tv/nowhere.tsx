@@ -34,6 +34,8 @@ export default function Bookmarks(): JSX.Element {
       
     <div className='flex flex-col items-center p-8 bg-no-repeat bg-top bg-contain' style={{ backgroundImage: 'url(/assets/tv/movie/data/nowhere/nowhere-cover.jpg)' }}>
 
+
+   <div className='flex mt-52'>
        <Image
         src='/assets/tv/movie/data/nowhere/nowhere.png' // Update this with the path to your image
         alt='Nowhere'
@@ -41,6 +43,7 @@ export default function Bookmarks(): JSX.Element {
         height={140}
         className=' mt-60 object-contain px-20 pb-2 rounded-lg'
                />
+      </div>
       <div className='flex'>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
