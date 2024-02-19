@@ -46,11 +46,7 @@ export default function Bookmarks(): JSX.Element {
                />
       </div>
       <div className='flex'>
-       <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
-                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
         <WideModal/>
-         
-      </Button>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
              <Image
