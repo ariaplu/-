@@ -15,6 +15,7 @@ import type { ReactElement, ReactNode } from 'react';
 import { NextImage } from '@components/ui/next-image';
 import Image from 'next/image';
 import { Movie } from '@components/tv/movie';
+import { WideModal } from '@components/modal/tv/wide';
 
 export default function Bookmarks(): JSX.Element {
   const { back } = useRouter();
@@ -47,13 +48,8 @@ export default function Bookmarks(): JSX.Element {
       <div className='flex'>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
-             <Image
-        src='/assets/tv/ui/wide.png' // Update this with the path to your image
-        alt='4K'
-        width={50}
-        height={20}
-        className='rounded-lg'
-               />
+        <WideModal/>
+         
       </Button>
        <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
