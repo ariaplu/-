@@ -34,7 +34,7 @@ export default function Bookmarks(): JSX.Element {
       
     <div className='flex flex-col items-center p-8 bg-no-repeat bg-top bg-contain' style={{ backgroundImage: 'url(/assets/tv/movie/data/nowhere/nowhere-cover.jpg)' }}>
 
-       <NextImage
+       <Image
         src='/assets/tv/movie/data/nowhere/nowhere.png' // Update this with the path to your image
         alt='Nowhere'
         width={700}
