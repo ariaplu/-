@@ -69,26 +69,14 @@ export function UsernameModal({
         {children}
       </div>
       <div className='flex flex-col gap-3 inner:py-2 inner:font-bold'>
-        <Button
-          className='bg-light-primary text-white transition focus-visible:bg-light-primary/90
-                     enabled:hover:bg-light-primary/90 enabled:active:bg-light-primary/80 
-                     dark:bg-light-border dark:text-light-primary dark:focus-visible:bg-light-border/90 
-                     dark:enabled:hover:bg-light-border/90 dark:enabled:active:bg-light-border/75'
-          type='submit'
-          loading={loading}
-          disabled={!available}
-        >
-          Set username
-        </Button>
+
         <Button
           className='border border-light-line-reply hover:bg-light-primary/10 focus-visible:bg-light-primary/10
                      active:bg-light-primary/20 dark:border-light-secondary dark:text-light-border 
                      dark:hover:bg-light-border/10 dark:focus-visible:bg-light-border/10 
                      dark:active:bg-light-border/20'
           onClick={cancelUpdateUsername}
-        >
-          {cancelLabel}
-        </Button>
+        >Close</Button>
       </div>
     </form>
   );
