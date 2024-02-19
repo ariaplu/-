@@ -16,7 +16,7 @@ export function Movie() {
    { src: '/assets/tv/movie/bw.jpg', href: '/link1' },
    { src: '/assets/tv/movie/emily.jpg', href: '/link1' },
    { src: '/assets/tv/movie/encanto.jpg', href: '/link1' },
-   { src: '/assets/tv/movie/persuasion.jpg', href: '/link1' },
+   { src: '/assets/tv/movie/persuasion.jpg', href: '/tv/persuasion' },
    { src: '/assets/tv/movie/itsyourchance.jpg', href: '/link1' },
    { src: '/assets/tv/movie/raya.jpg', href: '/link1' },
    { src: '/assets/tv/movie/tangled.jpg', href: '/link1' },
