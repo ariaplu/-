@@ -40,7 +40,7 @@ export default function Bookmarks(): JSX.Element {
        <Image
         src='/assets/tv/movie/data/nowhere/nowhere.png' // Aria+ tv Tittle Header
         alt='Nowhere'
-        width={500}
+        width={350}
         height={140}
         className=' mt-60 object-contain px-20 pb-2 rounded-lg'
                />
