@@ -95,7 +95,6 @@ export function WideModal(): JSX.Element {
       <Modal
         modalClassName='flex flex-col gap-6 max-w-xl bg-main-background w-full p-8 rounded-2xl h-[576px]'
         open={open}
-        closeModal={cancelWideModal}
       >
         <UsernameModal
           loading={loading}
