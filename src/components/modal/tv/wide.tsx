@@ -12,7 +12,6 @@ import { HeroIcon } from '@components/ui/hero-icon';
 import { ToolTip } from '@components/ui/tooltip';
 import { Modal } from '@components/modal/modal';
 import { UsernameModal } from '@components/modal/tv/wide-modal';
-import { InputField } from '@components/input/input-field';
 import type { FormEvent, ChangeEvent } from 'react';
 
 export function WideModal(): JSX.Element {
@@ -104,13 +103,6 @@ export function WideModal(): JSX.Element {
           changeUsername={changeUsername}
           cancelUpdateUsername={cancelUpdateUsername}
         >
-          <InputField
-            label='Username'
-            inputId='username'
-            inputValue={inputValue}
-            errorMessage={errorMessage}
-            handleChange={handleChange}
-          />
         </UsernameModal>
       </Modal>
       <Button
