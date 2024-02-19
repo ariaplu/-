@@ -21,9 +21,9 @@ const usernameModalData = [
     cancelLabel: 'Skip'
   },
   {
-    title: 'Change your username?',
+    title: 'Aria+ Wide',
     description:
-      'Your @username is unique. You can always change it here again.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus mollis ex a sodales. Quisque molestie massa quis dolor elementum rhoncus. Nullam scelerisque elementum elit, nec vestibulum augue luctus id. Aliquam et dolor non neque pulvinar sodales a nec mi. Morbi varius a erat in fermentum. Donec sed scelerisque purus. Integer sed libero sit amet erat aliquet facilisis in quis augue. Sed sollicitudin egestas fermentum. Integer sit amet tincidunt velit. Maecenas tincidunt justo at erat luctus feugiat. Pellentesque eget diam vitae elit ultrices ullamcorper. Aliquam tincidunt quam elit, ut interdum nisi maximus in. Donec eget enim feugiat, rutrum turpis sit amet, egestas tortor. Aenean lobortis finibus hendrerit.',
     cancelLabel: 'Cancel'
   }
 ] as const;
@@ -57,7 +57,7 @@ export function UsernameModal({
           useSkeleton
        />
           </i>
-          <div className='flex flex-col gap-2'>
+          <div className='flex items-center flex-col gap-2'>
             <Dialog.Title className='text-2xl font-bold xs:text-3xl sm:text-4xl'>
               {title}
             </Dialog.Title>
