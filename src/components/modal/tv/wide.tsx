@@ -1,95 +1,127 @@
-import { useRef, useEffect } from 'react';
-import cn from 'clsx';
-import { Dialog } from '@headlessui/react';
+/* eslint-disable react-hooks/exhaustive-deps */
+
+import { useState, useEffect } from 'react';
+import { toast } from 'react-hot-toast';
+import { checkUsernameAvailability, updateUsername } from '@lib/firebase/utils';
+import { useAuth } from '@lib/context/auth-context';
+import { useModal } from '@lib/hooks/useModal';
+import { isValidUsername } from '@lib/validation';
+import { sleep } from '@lib/utils';
 import { Button } from '@components/ui/button';
-import { CustomIcon } from '@components/ui/custom-icon';
-import { ArplImage } from '@components/ui/ariaplus';
+import { HeroIcon } from '@components/ui/hero-icon';
+import { ToolTip } from '@components/ui/tooltip';
+import { Modal } from '@components/modal/modal';
+import { UsernameModal } from '@components/modal/username-modal';
+import { InputField } from '@components/input/input-field';
+import type { FormEvent, ChangeEvent } from 'react';
 
+export function WideModal(): JSX.Element {
+  const [alreadySet, setAlreadySet] = useState(false);
+  const [available, setAvailable] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [visited, setVisited] = useState(false);
+  const [inputValue, setInputValue] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-type WideProps = {
-  title: string;
-  useIcon?: boolean;
-  description: string;
-  mainBtnLabel: string;
-  focusOnMainBtn?: boolean;
-  mainBtnClassName?: string;
-  secondaryBtnLabel?: string;
-  secondaryBtnClassName?: string;
-  action: () => void;
-  closeModal: () => void;
-};
-
-export function WideModal({
-  title,
-  useIcon,
-  description,
-  mainBtnLabel,
-  focusOnMainBtn,
-  mainBtnClassName,
-  secondaryBtnLabel,
-  secondaryBtnClassName,
-  action,
-  closeModal
-}: WideProps): JSX.Element {
-  const mainBtn = useRef<HTMLButtonElement>(null);
+  const { user } = useAuth();
+  const { open, openModal, closeModal } = useModal();
 
   useEffect(() => {
-    if (!focusOnMainBtn) return;
-    const timeoutId = setTimeout(() => mainBtn.current?.focus(), 50);
-    return () => clearTimeout(timeoutId);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const checkAvailability = async (value: string): Promise<void> => {
+      const empty = await checkUsernameAvailability(value);
+
+      if (empty) setAvailable(true);
+      else {
+        setAvailable(false);
+        setErrorMessage('This username has been taken. Please choose another.');
+      }
+    };
+
+    if (!visited && inputValue.length > 0) setVisited(true);
+
+    if (visited) {
+      if (errorMessage) setErrorMessage('');
+
+      const error = isValidUsername(user?.username as string, inputValue);
+
+      if (error) {
+        setAvailable(false);
+        setErrorMessage(error);
+      } else void checkAvailability(inputValue);
+    }
+  }, [inputValue]);
+
+  useEffect(() => {
+    if (!user?.updatedAt) openModal();
+    else setAlreadySet(true);
   }, []);
 
+  const changeUsername = async (
+    e: FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    e.preventDefault();
+
+    if (!available) return;
+
+    setLoading(true);
+
+    await sleep(500);
+
+    await updateUsername(user?.id as string, inputValue);
+
+    closeModal();
+
+    setLoading(false);
+
+    setInputValue('');
+    setVisited(false);
+    setAvailable(false);
+
+    toast.success('Username updated successfully');
+  };
+
+  const cancelUpdateUsername = (): void => {
+    closeModal();
+    if (!alreadySet) void updateUsername(user?.id as string);
+  };
+
+  const handleChange = ({
+    target: { value }
+  }: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void =>
+    setInputValue(value);
+
   return (
-    <div className='flex flex-col gap-6'>
-      <div className='flex flex-col gap-4'>
-        {useIcon && (
-          <i className='mx-auto'>
-         <ArplImage
-          imgClassName='arplicon'
-          blurClassName='none'
-          src='/assets/ariaplus.svg'
-          alt='Twitter banner'
-          layout='fill'
-          width='40px'
-          height='40px'
-          useSkeleton
-       />
-          </i>
-        )}
-        <div className='flex flex-col gap-2'>
-          <Dialog.Title className='text-xl font-bold'>{title}</Dialog.Title>
-          <Dialog.Description className='text-light-secondary dark:text-dark-secondary'>
-            {description}
-          </Dialog.Description>
-        </div>
-      </div>
-      <div className='flex flex-col gap-3 inner:py-2 inner:font-bold'>
-        <button
-          className={cn(
-            'custom-button main-tab text-white',
-            mainBtnClassName ??
-              `bg-light-primary hover:bg-light-primary/90 focus-visible:bg-light-primary/90 active:bg-light-primary/80
-               dark:bg-light-border dark:text-light-primary dark:hover:bg-light-border/90
-               dark:focus-visible:bg-light-border/90 dark:active:bg-light-border/75`
-          )}
-          ref={mainBtn}
-          onClick={action}
+    <>
+      <Modal
+        modalClassName='flex flex-col gap-6 max-w-xl bg-main-background w-full p-8 rounded-2xl h-[576px]'
+        open={open}
+        closeModal={cancelUpdateUsername}
+      >
+        <UsernameModal
+          loading={loading}
+          available={available}
+          alreadySet={alreadySet}
+          changeUsername={changeUsername}
+          cancelUpdateUsername={cancelUpdateUsername}
         >
-          {mainBtnLabel}
-        </button>
-        <Button
-          className={cn(
-            'border border-light-line-reply dark:border-light-secondary dark:text-light-border',
-            secondaryBtnClassName ??
-              `hover:bg-light-primary/10 focus-visible:bg-light-primary/10 active:bg-light-primary/20
-               dark:hover:bg-light-border/10 dark:focus-visible:bg-light-border/10 dark:active:bg-light-border/20`
-          )}
-          onClick={closeModal}
-        >
-          {secondaryBtnLabel ?? 'Cancel'}
-        </Button>
-      </div>
-    </div>
+          <InputField
+            label='Username'
+            inputId='username'
+            inputValue={inputValue}
+            errorMessage={errorMessage}
+            handleChange={handleChange}
+          />
+        </UsernameModal>
+      </Modal>
+      <Button
+        className='dark-bg-tab group relative p-2 hover:bg-light-primary/10
+                   active:bg-light-primary/20 dark:hover:bg-dark-primary/10 
+                   dark:active:bg-dark-primary/20'
+        onClick={openModal}
+      >
+        <HeroIcon className='h-5 w-5' iconName='AtSymbolIcon' />
+        <ToolTip tip='Top tweets' />
+      </Button>
+    </>
   );
 }
