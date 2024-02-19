@@ -11,7 +11,7 @@ import { Button } from '@components/ui/button';
 import { HeroIcon } from '@components/ui/hero-icon';
 import { ToolTip } from '@components/ui/tooltip';
 import { Modal } from '@components/modal/modal';
-import { UsernameModal } from '@components/modal/username-modal';
+import { UsernameModal } from '@components/modal/tv/wide-modal';
 import { InputField } from '@components/input/input-field';
 import type { FormEvent, ChangeEvent } from 'react';
 
