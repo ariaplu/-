@@ -58,8 +58,13 @@ export function UsernameModal({
        />
           </i>
           <div className='flex items-center flex-col gap-2'>
-            <div className='text-2xl font-bold xs:text-3xl sm:text-4xl'>
-             <Cat/>
+            <Dialog.Title className='text-2xl font-bold xs:text-3xl sm:text-4xl'>
+              {title}
+            </Dialog.Title>
+            <Cat/>
+          </div>
+        </div>
+        {children}
       </div>
       <div className='flex flex-col gap-3 inner:py-2 inner:font-bold'>
 
