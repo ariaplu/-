@@ -63,8 +63,8 @@ export function UsernameModal({
             </Dialog.Title>
             <Dialog.Description className='text-light-secondary dark:text-dark-secondary'>
             {description}
-              <Cat/>
             </Dialog.Description>
+          <Cat/>
           </div>
         </div>
         {children}
