@@ -25,7 +25,7 @@ export function TvNav({ follow }: UserNavProps): JSX.Element {
   return (
     <motion.nav
       className={cn(
-        `hover-animation flex justify-between overflow-y-auto
+        `hover-animation bg-neutral-950 hover:bg-violet-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 ... flex justify-between overflow-y-auto
          pb-4 px-6`,
         follow && 'mt-1 mb-0.5'
       )}
