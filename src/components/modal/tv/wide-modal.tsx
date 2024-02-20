@@ -43,7 +43,7 @@ export function UsernameModal({
       className='flex h-full flex-col justify-between'
       onSubmit={changeUsername}
     >
-      <div className='flex flex-col gap-6'>
+    <div className='flex flex-col items-center gap-6 p-8 bg-no-repeat bg-top bg-contain' style={{ backgroundImage: 'url(/assets/tv/movie/data/nowhere/nowhere-cover.jpg)' }}>
         <div className='flex flex-col gap-4'>
           <i className='mx-auto'>
       <ArplImage
