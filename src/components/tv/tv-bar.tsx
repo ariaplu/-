@@ -21,7 +21,7 @@ export function TvBar() {
   ];
 
   return (
-    <div className='grid grid-cols-4 gap-4 px-3'>
+    <div className='grid grid-cols-4 gap-4 px-3 pb-8'>
       {images.map((image, index) => (
         <Link key={index} href={image.href}>
           <a className='relative h-16 md:h-16 sm:h-16 overflow-hidden hover-animation transition rounded-lg'>
