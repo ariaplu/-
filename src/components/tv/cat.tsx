@@ -11,16 +11,20 @@ export function Cat() {
   const images: ImageProps[] = [
    { src: '/assets/tv/movie/m.jpg', href: '/tv/forestwitch' },
    { src: '/assets/tv/movie/n.jpg', href: '/tv/nowhere' },
+   { src: '/assets/tv/movie/n.jpg', href: '/tv/nowhere' },
+   { src: '/assets/tv/movie/twtc.jpg', href: '/link1' },
+   { src: '/assets/tv/movie/m.jpg', href: '/tv/forestwitch' },
+   { src: '/assets/tv/movie/n.jpg', href: '/tv/nowhere' },
    { src: '/assets/tv/movie/twtc.jpg', href: '/link1' },
    { src: '/assets/tv/movie/gits.jpeg', href: '/link1' }   
     // Add more images as needed
   ];
 
   return (
-    <div className='grid grid-cols-3 gap-4 px-3'>
+    <div className='grid grid-cols-4 gap-4 px-3'>
       {images.map((image, index) => (
         <Link key={index} href={image.href}>
-          <a className='relative h-48 md:h-64 sm:h-56 overflow-hidden hover-animation transition rounded-lg'>
+          <a className='relative h-16 md:h-16 sm:h-16 overflow-hidden hover-animation transition rounded-lg'>
             <NextImage
               useSkeleton
               src={image.src}
