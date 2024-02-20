@@ -61,11 +61,12 @@ export function UsernameModal({
             <Dialog.Title className='text-2xl font-bold xs:text-3xl sm:text-4xl'>
               {title}
             </Dialog.Title>
-            <Cat/>
+
           </div>
         </div>
         {children}
       </div>
+      <Cat/>
       <div className='flex flex-col gap-3 inner:py-2 inner:font-bold'>
 
         <Button
