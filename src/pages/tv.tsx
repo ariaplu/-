@@ -19,6 +19,7 @@ import { MainContainer } from '@components/home/main-container';
 import { Modal } from '@components/modal/modal';
 import { ActionModal } from '@components/modal/action-modal';
 import { Movie } from '@components/tv/movie';
+import { TvBar } from '@components/tv/tv-bar';
 import { StatsEmpty } from '@components/tweet/stats-empty';
 import { Button } from '@components/ui/button';
 import { ToolTip } from '@components/ui/tooltip';
@@ -93,6 +94,7 @@ export default function Bookmarks(): JSX.Element {
           />
         </Button>
       </MainHeader>
+      <TvBar/>
       <Movie/>
     </MainContainer>
   );
