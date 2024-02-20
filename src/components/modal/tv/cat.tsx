@@ -92,7 +92,7 @@ export function CatModal(): JSX.Element {
   return (
     <>
       <Modal
-        modalClassName='flex flex-col gap-6 max-w-xl bg-main-background w-full p-8 rounded-2xl h-[576px] bg-no-repeat bg-top bg-cover' 
+        modalClassName='flex flex-col gap-6 max-w-xl bg-main-background w-full p-8 rounded-2xl h-[485px] bg-no-repeat bg-top bg-cover' 
         open={open}
         closeModal={cancelUpdateUsername}
       >
