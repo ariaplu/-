@@ -3,6 +3,7 @@ import { CustomIcon } from '@components/ui/custom-icon';
 import { Button } from '@components/ui/button';
 import type { ReactNode, FormEvent } from 'react';
 import { ArplImage } from '@components/ui/ariaplus';
+import { Cat } from '@components/tv/cat';
 
 
 type UsernameModalProps = {
@@ -56,12 +57,7 @@ export function UsernameModal({
        />
           </i>
           <div className='flex items-center flex-col gap-2'>
-            <Dialog.Title className='text-2xl font-bold xs:text-3xl sm:text-4xl'>
-              {title}
-            </Dialog.Title>
-            <Dialog.Description className='text-light-secondary dark:text-dark-secondary'>
-              {description}
-            </Dialog.Description>
+            <Cat/>
           </div>
         </div>
         {children}
