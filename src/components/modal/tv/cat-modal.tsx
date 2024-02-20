@@ -25,7 +25,7 @@ const usernameModalData = [
   {
     title: 'Aria+ Wide',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus mollis ex a sodales. Quisque molestie massa quis dolor elementum rhoncus. Nullam scelerisque elementum elit, nec vestibulum augue luctus id. Aliquam et dolor non neque pulvinar sodales a nec mi. Morbi varius a erat in fermentum. Donec sed scelerisque purus. Integer sed libero sit amet erat aliquet facilisis in quis augue. Sed sollicitudin egestas fermentum. Integer sit amet tincidunt velit. Maecenas tincidunt justo at erat luctus feugiat. Pellentesque eget diam vitae elit ultrices ullamcorper. Aliquam tincidunt quam elit, ut interdum nisi maximus in. Donec eget enim feugiat, rutrum turpis sit amet, egestas tortor. Aenean lobortis finibus hendrerit.',
+      '',
     cancelLabel: 'Cancel'
   }
 ] as const;
@@ -62,6 +62,7 @@ export function UsernameModal({
               {title}
             </Dialog.Title>
             <Dialog.Description className='text-light-secondary dark:text-dark-secondary'>
+            {description}
               <Cat/>
             </Dialog.Description>
           </div>
