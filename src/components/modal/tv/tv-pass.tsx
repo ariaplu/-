@@ -111,7 +111,7 @@ export function TvPassModal(): JSX.Element {
                    dark:active:bg-dark-primary/20'
         onClick={openModal}
       >
-        <HeroIcon className='h-5 w-5' iconName='AtSymbolIcon' />
+        <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
         <ToolTip tip='Top tweets' />
       </Button>
     </>
