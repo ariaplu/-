@@ -6,6 +6,7 @@ import { ArplImage } from '@components/ui/ariaplus';
 import { Cat } from '@components/tv/cat';
 
 
+
 type UsernameModalProps = {
   loading: boolean;
   children: ReactNode;
@@ -57,7 +58,13 @@ export function UsernameModal({
        />
           </i>
           <div className='flex items-center flex-col gap-2'>
-            <Cat/>
+            <Dialog.Title className='text-2xl font-bold xs:text-3xl sm:text-4xl'>
+              {title}
+            </Dialog.Title>
+            <Dialog.Description className='text-light-secondary dark:text-dark-secondary'>
+              {description}
+              <Cat/>
+            </Dialog.Description>
           </div>
         </div>
         {children}
