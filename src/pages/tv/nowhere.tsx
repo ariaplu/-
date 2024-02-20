@@ -16,6 +16,7 @@ import { NextImage } from '@components/ui/next-image';
 import Image from 'next/image';
 import { Movie } from '@components/tv/movie';
 import { WideModal } from '@components/modal/tv/wide';
+import { CastModal } from '@components/modal/tv/cast';
 
 export default function Bookmarks(): JSX.Element {
   const { back } = useRouter();
@@ -47,16 +48,7 @@ export default function Bookmarks(): JSX.Element {
       </div>
       <div className='flex'>
         <WideModal/>
-       <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
-                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
-             <Image
-        src='/assets/ariaplus.svg' // Update this with the path to your image
-        alt='4K'
-        width={20}
-        height={20}
-        className='rounded-lg'
-               />
-      </Button>
+        <CastModal/>
       <Button className='dark-bg-tab group relative ml-auto p-2 hover:bg-light-primary/10
                      active:bg-light-primary/20 dark:hover:bg-dark-primary/10 dark:active:bg-dark-primary/20'>
              <Image
