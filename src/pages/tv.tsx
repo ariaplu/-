@@ -59,21 +59,7 @@ export default function Bookmarks(): JSX.Element {
   return (
     <MainContainer>
       <SEO title='tv | Aria+' />
-      <Modal
-        modalClassName='max-w-xs items-center bg-main-background w-full p-8 rounded-2xl'
-        open={open}
-        closeModal={closeModal}
-      >
-        <ActionModal
-          title='Aria+ tv Pass'
-          description='Start streaming now'
-          mainBtnClassName='bg-accent-blue hover:bg-accent-green/90 active:bg-accent-blue/75 accent-tab 
-                            focus-visible:bg-accent-blue/90'
-          mainBtnLabel='Start'
-          action={handleClear}
-          closeModal={closeModal}
-        />
-      </Modal>
+      
       <MainHeader className='flex items-center justify-between'>
         <div className='-mb-1 flex flex-col'>
           <h2 className='-mt-1 text-xl font-bold'>tv</h2>
@@ -81,19 +67,9 @@ export default function Bookmarks(): JSX.Element {
             @{user?.username}
           </p>
         </div>
-                <Button
-          className='dark-bg-tab group relative p-2 hover:bg-light-primary/10
-                     active:bg-light-primary/20 dark:hover:bg-dark-primary/10 
-                     dark:active:bg-dark-primary/20'
-          onClick={openModal}
-        >
-          <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
-          <ToolTip
-            className='!-translate-x-20 translate-y-3 md:-translate-x-1/2'
-            tip='Aria+ tv Pass'
-          />
-        </Button>
+        
         <div className=' flex items-right'>
+       <CatModal/>
        <CatModal/>
           </div>
         
