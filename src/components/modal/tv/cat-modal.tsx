@@ -61,10 +61,6 @@ export function UsernameModal({
             <Dialog.Title className='text-2xl font-bold xs:text-3xl sm:text-4xl'>
               {title}
             </Dialog.Title>
-            <Dialog.Description className='text-light-secondary dark:text-dark-secondary'>
-            {description}
-            </Dialog.Description>
-          <Cat/>
           </div>
         </div>
         {children}
