@@ -23,7 +23,7 @@ const usernameModalData = [
     cancelLabel: 'Skip'
   },
   {
-    title: 'Aria+ Wide',
+    title: 'tv remote',
     description:
       'X',
     cancelLabel: 'Cancel'
