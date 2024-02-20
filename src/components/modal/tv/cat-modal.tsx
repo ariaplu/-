@@ -40,7 +40,7 @@ export function UsernameModal({
 
   return (
     <form
-      className='flex h-full flex-col justify-between bg-no-repeat bg-top bg-cover' style={{ backgroundImage: 'url(/assets/tv/movie/data/nowhere/nowhere-cover.jpg)' }}>
+      className='flex h-full flex-col justify-between' >
     <div className='flex flex-col items-center gap-6'>
         <div className='flex flex-col gap-4'>
           <i className='mx-auto'>
