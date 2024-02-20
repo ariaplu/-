@@ -11,6 +11,7 @@ export function TvBar() {
   const images: ImageProps[] = [
    { src: '/assets/tv/movie/m.jpg', href: '/tv/forestwitch' },
    { src: '/assets/tv/movie/n.jpg', href: '/tv/nowhere' },
+   { src: '/assets/tv/movie/n.jpg', href: '/tv/nowhere' },
    { src: '/assets/tv/movie/pd.jpg', href: '/link1' }
     
     
