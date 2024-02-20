@@ -87,13 +87,13 @@ export default function Bookmarks(): JSX.Element {
                      dark:active:bg-dark-primary/20'
           onClick={openModal}
         >
-                  <CatModal/>
           <HeroIcon className='h-5 w-5' iconName='TicketIcon' />
           <ToolTip
             className='!-translate-x-20 translate-y-3 md:-translate-x-1/2'
             tip='Aria+ tv Pass'
           />
         </Button>
+       <CatModal/>
       </MainHeader>
       <Movie/>
     </MainContainer>
