@@ -18,6 +18,7 @@ import { MainHeader } from '@components/home/main-header';
 import { MainContainer } from '@components/home/main-container';
 import { Modal } from '@components/modal/modal';
 import { CatModal } from '@components/modal/tv/cat';
+import { TvPassModal } from '@components/modal/tv/tv-pass';
 import { ActionModal } from '@components/modal/action-modal';
 import { Movie } from '@components/tv/movie';
 import { StatsEmpty } from '@components/tweet/stats-empty';
@@ -70,7 +71,7 @@ export default function Bookmarks(): JSX.Element {
         
         <div className=' flex items-right'>
        <CatModal/>
-       <CatModal/>
+       <TvPassModal/>
           </div>
         
       </MainHeader>
