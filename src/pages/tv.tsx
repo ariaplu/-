@@ -93,7 +93,10 @@ export default function Bookmarks(): JSX.Element {
             tip='Aria+ tv Pass'
           />
         </Button>
+        <div className=' flex items-right'>
        <CatModal/>
+          </div>
+        
       </MainHeader>
       <Movie/>
     </MainContainer>
