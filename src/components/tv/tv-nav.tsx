@@ -9,11 +9,9 @@ type UserNavProps = {
 
 const allNavs = [
   [
-    { name: 'For You', path: 'foryou' },
-    { name: 'Trending', path: 'trending' },
-    { name: 'News', path: 'news' },
-    { name: 'Sports', path: 'sports' },
-    { name: 'Fun', path: 'fun' }
+    { name: 'ORIGINALS', path: 'originals' },
+    { name: 'Movies', path: 'movies' },
+    { name: 'Shows', path: 'shows' }
   ],
   [
     { name: 'Following', path: 'following' },
